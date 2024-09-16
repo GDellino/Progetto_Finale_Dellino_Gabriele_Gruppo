@@ -1,0 +1,7 @@
+input:user-valid{
+      border-color: var(--clr-correct);
+}
+
+input:user-valid{
+      border-color: var(--clr-error);
+}
