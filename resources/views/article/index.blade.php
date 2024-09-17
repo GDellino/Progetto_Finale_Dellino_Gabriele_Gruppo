@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-3 text-center bg-danger">
+                <h1 class="display-3 text-center">
                     Tutti gli articoli
                 </h1>
 

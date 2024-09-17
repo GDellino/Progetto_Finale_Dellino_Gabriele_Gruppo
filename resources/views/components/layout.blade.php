@@ -10,15 +10,11 @@
 </head>
 
 <body>
-
-
     <x-navbar />
-    {{ $slot }}
+
+        {{ $slot }}
 
     <x-footer />
-
-
-
 </body>
 
 </html>

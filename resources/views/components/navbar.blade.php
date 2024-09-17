@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg shadow fs-4  ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('homepage') }}">Home</a>
@@ -19,14 +19,14 @@
                         @foreach ($categories as $category)
                             <li><a class="dropdown-item" href="{{route('byCategory', ['category' => $category])}}">{{$category->name}}</a></li>
                             @if (!$loop->last)
-                                <hr class="dropdown-divider"> 
-                            @endif           
+                                <hr class="dropdown-divider">
+                            @endif
                         @endforeach
-                       
+
                     </ul>
                 </li>
                 @auth
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown position-absolute end-0 pe-5">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Ciao,{{ Auth::user()->name }}
@@ -49,16 +49,7 @@
                             <li><a class="nav-link" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
                     </li>
-
                 @endauth
-
-
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-
             </ul>
         </div>
     </div>

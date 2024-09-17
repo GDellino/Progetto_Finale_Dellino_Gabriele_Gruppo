@@ -1,11 +1,32 @@
-input:user-valid{
-      border-color: var(--clr-correct);
-}
-
-input:user-valid{
-      border-color: var(--clr-error);
-}
-
-textarea{
+textarea {
       resize: none;
 }
+
+header {
+      height: 100vh;
+
+}
+
+body {
+      background-image: url('');
+}
+.navbar {
+      width: 100%;
+      background-color: rgb(122, 158, 126) ;
+      display: flex;
+      justify-content: center;
+
+
+}
+
+footer {
+      background-color: rgb(122, 158, 126) ;
+}
+
+
+/* html,body,.container {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+} */
