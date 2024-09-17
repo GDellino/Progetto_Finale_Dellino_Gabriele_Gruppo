@@ -5,3 +5,7 @@ input:user-valid{
 input:user-valid{
       border-color: var(--clr-error);
 }
+
+textarea{
+      resize: none;
+}
