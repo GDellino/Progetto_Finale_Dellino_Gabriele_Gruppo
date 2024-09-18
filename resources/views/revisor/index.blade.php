@@ -9,6 +9,9 @@
                 </div>
             </div>
         </div>
+        @if (session()->has('message'))
+            <div class="alert alert-success text-center">{{ session('message') }}</div>
+        @endif
         @if($article_to_check)
         <div class="row justify-content-center pt-5">
             <div class="col-md-8">
@@ -32,12 +35,14 @@
                     <p class="h6">{{$article_to_check->description}}</p>
                 </div>
                 <div class="d-flex justify-content-around pb-4">
-                    <form action="" method="POST">
+                    <form action="{{route('reject',['article'=> $article_to_check])}}" method="POST">
                         @csrf
+                        @method('PATCH')
                         <button class="btn btn-danger py-2 px-5 fw-bold">Rifiuta</button>
                     </form>
-                    <form action="" method="POST">
+                    <form action="{{route('accept',['article'=> $article_to_check])}}" method="POST">
                         @csrf
+                        @method('PATCH')
                         <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
                     </form>
                 </div>

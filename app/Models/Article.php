@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
+
 class Article extends Model
 {
     use HasFactory;
@@ -23,4 +24,14 @@ class Article extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function setAccepted($value) {
+        $this->is_accepted=$value;
+        $this->save();
+        return true;
+    }
+
+    public static function toBeRevisedCount(){   
+        return Article::where('is_accepted', null)->count();
+    }
+    
 }

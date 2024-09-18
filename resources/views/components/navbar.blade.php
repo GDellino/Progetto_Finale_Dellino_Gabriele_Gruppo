@@ -26,6 +26,13 @@
                     </ul>
                 </li>
                 @auth
+                    @if (Auth::user()->is_revisor)
+                    <li class="nav-item">
+                        <a class="nav-link text-white position-relative w-sm-25" href="{{route('revisor.index')}}">Zona revisore
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisedCount()}}</span>
+                        </a>
+                    </li>
+                    @endif
                     <li class="nav-item dropdown position-absolute end-0 pe-5">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -49,7 +56,7 @@
                             <li><a class="nav-link" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
                     </li>
-                @endauth
+                @endauth 
             </ul>
         </div>
     </div>
