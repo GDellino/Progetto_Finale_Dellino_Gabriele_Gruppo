@@ -1,10 +1,18 @@
 <x-layout>
-    <div class="vh-100">
-        <h1 class="text-center">Helloooo</h1>
-    </div>
-    @auth
-        <a href="{{ route('article.create') }}" class="btn btn-primary">Inserisci Annuncio</a>
-    @endauth
+    <header>
+        <h1 class="text-center">Presto.it</h1>
+
+        @auth
+            <a href="{{ route('article.create') }}" class="btn btn-primary">Inserisci Annuncio</a>
+        @endauth
+    </header>
+        
+
+
+
+
+
+    
     <div class="container-fluid text-center bg-danger ">
         <div class='row justify-content-center align-items-center'>
     @forelse ($articles as $article)
