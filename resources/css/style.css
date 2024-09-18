@@ -27,9 +27,7 @@ footer {
 }
 
 header{
-      background-image: url("../../public/storage/images/background-presto-1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
+     background-color: antiquewhite;
 }
 
 .patua-one-regular {
@@ -38,10 +36,12 @@ header{
       font-style: normal;
 }
     
-h1 {  
+.titolo {  
       font-family: "Anton", sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 300px;
+      font-size: 100px;
 }
-    
+.alt{
+      height: 20px;
+}

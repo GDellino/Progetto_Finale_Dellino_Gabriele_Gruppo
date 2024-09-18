@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg shadow fs-4  ">
+<nav class="navbar navbar-expand-lg shadow  ">
     <div class="container-fluid ">
         <a class="navbar-brand text-white" href="#">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
