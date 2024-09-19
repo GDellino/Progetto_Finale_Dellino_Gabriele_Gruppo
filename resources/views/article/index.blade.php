@@ -11,13 +11,13 @@
         <div class="container-fluid text-center">
             <div class='row justify-content-center align-items-center'>
                 @forelse ($articles as $article)
-                <div class="col-12 col-md-3 p-5">
-                    <x-card :article="$article" />
-                </div>
+                    <div class="col-12 col-md-3 p-5">
+                        <x-card :article="$article" />
+                    </div>
                 @empty
-                <div class="col-3">
-                    <h3 class="text-center bg-success">Non ci sono ancora articoli</h3>
-                </div>
+                    <div class="col-3">
+                        <h3 class="text-center bg-success">Non ci sono ancora articoli</h3>
+                    </div>
                 @endforelse
             </div>
         </div>

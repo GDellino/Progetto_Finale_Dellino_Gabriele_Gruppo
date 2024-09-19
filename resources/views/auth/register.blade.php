@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
-                <h1 class="display-4 text-center">Registrati</h1>
+                <h1 class="display-4 text-center">Registrati</h1>   
             </div>
         </div>
 
@@ -12,19 +12,31 @@
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control rounded-4" id="name" name="name">
+                        <input type="text" class="form-control @error('name') is-invalid @enderror rounded-4" id="name" name="name">
+                        @error('name')
+                            <p class="fst-italic text-danger">{{ $message }}</p>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email </label>
-                        <input type="email" class="form-control rounded-4" id="email" name="email">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror rounded-4" id="email" name="email">
+                        @error('email')
+                            <p class="fst-italic text-danger">{{ $message }}</p>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control rounded-4" id="password" name="password">
+                        <input type="password" class="form-control @error('password') is-invalid @enderror rounded-4" id="password" name="password">
+                        @error('password')
+                            <p class="fst-italic text-danger">{{ $message }}</p>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="password_confirmation" class="form-label">Conferma password</label>
-                        <input type="password" class="form-control rounded-4" id="password_confirmation" name="password_confirmation">
+                        <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror rounded-4" id="password_confirmation" name="password_confirmation">
+                        @error('password_confirmation')
+                            <p class="fst-italic text-danger">{{ $message }}</p>
+                        @enderror
                     </div>
                     <div class="d-flex justify-content-center my-3">
                         <button type="submit" class="btn btn-primary">Registrati</button>
