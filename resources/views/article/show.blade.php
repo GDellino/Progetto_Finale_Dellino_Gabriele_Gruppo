@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-                <div class="col-12 col-md-3 mb-3 height-custom d-flex flex-column bg-danger ">
+                <div class="col-12 col-md-3 mb-3 height-custom d-flex flex-column  ">
                     <div class="d-flex flex-column justify-content-between bg-info  align-items-center h-100 py-5">
                         <div >
                             <h5>Descrizione:</h5>

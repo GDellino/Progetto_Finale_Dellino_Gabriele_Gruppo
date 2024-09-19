@@ -7,7 +7,7 @@
         </div>
 
         <div class="row justify-content-center pb-5 my-5">
-            <div class="col-4 bg-danger rounded-3 ">
+            <div class="col-4  rounded-3 ">
                 <form action="{{ route('register') }}" method="POST" class="p-2" >
                     @csrf
                     <div class="mb-3">
