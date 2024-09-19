@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg shadow  ">
+{{-- mettere position-fixed? provare e calc --}}
+<nav class="navbar navbar-expand-lg shadow p-3 ">
     <div class="container-fluid ">
         <a class="navbar-brand text-white" href="#">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,12 +57,12 @@
                             <li><a class="nav-link" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
                     </li>
-                @endauth 
+                @endauth
                 {{-- Form per la ricerca --}}
                 <form class="d-flex px-5" role="search" action="{{route('article.search')}}" method="GET">
                     <div class="input-group">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="search" name="query">
-                        <button class="btn btn-outline-success input-group-text" type="submit" id="basic-addon2">Cerca</button> 
+                        <button class="btn btn-outline-success input-group-text" type="submit" id="basic-addon2">Cerca</button>
                     </div>
                 </form>
             </ul>

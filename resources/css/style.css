@@ -4,25 +4,38 @@ textarea {
 
 .navbar {
       width: 100%;
-      background-color: rgb(18, 69, 89) ;
+      background-color: #585350;
       display: flex;
       justify-content: center;
       text-decoration-color: white;
+
 }
 
-.blue{
-      background-color: rgb(18, 69, 89) ;
+.blue {
+      background-color: rgb(18, 69, 89);
 }
 
 footer {
-      background-color: rgb(18, 69, 89) ;
+      background-color: rgb(18, 69, 89);
 }
 
-header{
-      height: 100vh;
-      background-image: url(../../public/storage/images/e706ac12-f3d7-4963-b7b9-24c485970f17.jpg);
+.custom {
+      height: 75vh;
+}
+
+.bg-col {
+      background-color: #DDDCDA;
+      border: 2px;
+      border-color: #728E17;
+      border-style: solid;
+}
+
+.bg-img {
+
+      background-image: url(../../public/storage/images/Progetto\ senza\ titolo.png);
       background-repeat: no-repeat;
       background-size: cover;
+
 }
 
 .patua-one-regular {
@@ -37,6 +50,60 @@ header{
       font-style: normal;
       font-size: 100px;
 }
-.alt{
+
+.alt {
       height: 20px;
+}
+
+.btn-wel {
+      font-family: var(--font-sans);
+      font-weight: var(--font-weight-6);
+      font-size: var(--font-size-5);
+      color: var(--gray-8);
+      background: rgb(245, 245, 144);
+      border: 0;
+      padding: var(--size-4) var(--size-8);
+      transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+      transition: transform 0.1s;
+      position: relative;
+      text-decoration: none;
+}
+
+.btn-wel:hover {
+      --y: -10;
+      --scale: 1.1;
+      --border-scale: 1;
+}
+
+.btn-wel:active {
+      --y: 5%;
+      --scale: 0.9;
+      --border-scale: 0.9, 0.8;
+}
+
+.btn-wel:before {
+      content: "";
+      position: absolute;
+      inset: calc(var(--size-3) * -1);
+      border: var(--size-2) solid #728E17;
+      transform: scale(var(--border-scale, 0));
+      transition: transform 0.125s;
+      border-radius: 5%;
+
+      --angle-one: 105deg;
+      --angle-two: 290deg;
+      --spread-one: 30deg;
+      --spread-two: 40deg;
+      --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+      --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+      --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+      --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+
+      mask: conic-gradient(transparent 0 var(--start-one),
+                  #728E17 var(--start-one) var(--end-one),
+                  transparent var(--end-one) var(--start-two),
+                  #728E17 var(--start-two) var(--end-two),
+                  transparent var(--end-two));
+
+      z-index: -1;
 }
