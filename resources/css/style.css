@@ -2,14 +2,6 @@ textarea {
       resize: none;
 }
 
-header {
-      height: 100vh;
-
-}
-
-body {
-      background-image: url('');
-}
 .navbar {
       width: 100%;
       background-color: rgb(18, 69, 89) ;
@@ -27,7 +19,10 @@ footer {
 }
 
 header{
-     background-color: antiquewhite;
+      height: 100vh;
+      background-image: url(../../public/storage/images/e706ac12-f3d7-4963-b7b9-24c485970f17.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
 }
 
 .patua-one-regular {

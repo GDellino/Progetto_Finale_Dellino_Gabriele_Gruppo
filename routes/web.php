@@ -5,7 +5,10 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
 
-Route::get('/',[PublicController::class, "homepage"])->name('homepage');
+Route::get('/',[PublicController::class, 'homepage'])->name('homepage');
+
+// Rotta Ricerca
+Route::get('/search/article',[PublicController::class, 'searchArticles'])->name('article.search');
 
 // Rotte Articolo
 Route::get('/create/article',[ArticleController::class,'create'])->name('article.create')->middleware('auth');
@@ -23,3 +26,4 @@ Route::patch('/reject/{article}',[RevisorController::class,'reject'])->name('rej
 // Rotte Mail
 Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}',[RevisorController::class, 'makeRevisor'])->name('make.revisor');
+

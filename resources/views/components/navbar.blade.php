@@ -57,6 +57,13 @@
                         </ul>
                     </li>
                 @endauth 
+                {{-- Form per la ricerca --}}
+                <form class="d-flex px-5" role="search" action="{{route('article.search')}}" method="GET">
+                    <div class="input-group">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="search" name="query">
+                        <button class="btn btn-outline-success input-group-text" type="submit" id="basic-addon2">Cerca</button> 
+                    </div>
+                </form>
             </ul>
         </div>
     </div>
