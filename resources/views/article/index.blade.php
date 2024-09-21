@@ -1,6 +1,6 @@
 <x-layout>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid ">
+        <div class="row row-log">
             <div class="col-12">
                 <h1 class="display-3 text-center">
                     Tutti gli articoli
@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="container-fluid text-center">
-            <div class='row justify-content-center align-items-center'>
+            <div class='row justify-content-center align-items-center min-vh-100'>
                 @forelse ($articles as $article)
                     <div class="col-12 col-md-3 p-5">
                         <x-card :article="$article" />

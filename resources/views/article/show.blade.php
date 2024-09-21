@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center text-center my-5">
-            <div class="col-12">
-                <h1 class="display-4"> {{$article->title}}</h1>
+    <div class="container-fluid min-vh-100 ">
+        <div class="row justify-content-center align-items-center text-center my-5 row-log ">
+            <div class="col-12 my-4">
+                <h1 class="display-3"> {{$article->title}}</h1>
             </div>
         </div>
         <div class="row height-custom justify-content-center py-5">
@@ -10,13 +10,13 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="http://picsum.photos/400" class="d-block  rounded-5 shadow" alt="">
+                            <img src="http://picsum.photos/400" class="d-block  rounded-3 shadow" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="http://picsum.photos/401" class="d-block  rounded-5 shadow" alt="">
+                            <img src="http://picsum.photos/401" class="d-block  rounded-3 shadow" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="http://picsum.photos/402" class="d-block  rounded-5 shadow" alt="">
+                            <img src="http://picsum.photos/402" class="d-block  rounded-3 shadow" alt="">
                         </div>
 
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -31,13 +31,19 @@
                 </div>
             </div>
                 <div class="col-12 col-md-3 mb-3 height-custom d-flex flex-column  ">
-                    <div class="d-flex flex-column justify-content-between bg-info  align-items-center h-100 py-5">
-                        <div >
-                            <h5>Descrizione:</h5>
-                            <p>{{$article->description}}</p>
+                    <div class="d-flex flex-column justify-content-between  align-items-center h-100 py-5">
+                    <div class="quote-container">
+                        <i class="pin"></i>
+                        <blockquote class="note yellow ">
+                            <h3 class="text-white fw-bold text-center">Descrizione</h3>
+                            <p class="text-white">{{$article->description}}</p>
+
+                                <h4 class="fw-blod text-white fixed-bottom text-end p-3">Prezzo: {{$article->price}} €</h4>
+
+
                         </div>
-                        <h4 class="fw-blod">Prezzo: {{$article->price}} €</h4>
-                    </div>
+                        </blockquote>
+                      </div>
                 </div>
         </div>
     </div>

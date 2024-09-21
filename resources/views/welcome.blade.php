@@ -28,7 +28,7 @@
      <section class="section-color">
          <div class="container-fluid text-center py-5 ">
             <h2 class="py-5 text-center">Ultimi Annunci</h2>
-            <div class='row justify-content-center align-items-center '>
+            <div class='row justify-content-center align-items-center gap-3 '>
                 @forelse ($articles as $article)
                     <div class=" col-12 col-md-3 d-flex justify-content-center align-items-center  ">
                         <x-card :article="$article" />

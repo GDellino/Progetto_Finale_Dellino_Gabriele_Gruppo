@@ -1,4 +1,4 @@
-<form wire:submit="save">
+<form wire:submit="save" class="shadow p-4 rounded-3 form-color">
     @if (session()->has('success'))
         <div class="alert alert-success text-center">{{ session('success') }}</div>
     @endif
@@ -47,6 +47,8 @@
 
 
     </div>
+    <div class="d-flex justify-content-center py-3">
+        <button type="submit" class="btn btn-warning">Pubblica</button>
 
-    <button type="submit" class="btn btn-primary">Pubblica</button>
+    </div>
 </form>

@@ -1,6 +1,6 @@
 <x-layout>
-    <div class="container-fluid pt-5">
-        <div class="row">
+    <div class="container-fluid pt-5 min-vh-100">
+        <div class="row row-log">
             <div class="col-3">
                 <div class="roundend shadow bg-body-secondary">
                     <h1 class="display-5 text-center pb-2">
@@ -18,12 +18,12 @@
                 <div class="row justift-content-center">
                     @for ($i = 0; $i < 6 ; $i++)
                     <div class="col-6 col-md-4 mb-4 text-center">
-                        <img src="http://picsum.photos/401" 
-                        alt="immagine segnaposto" 
+                        <img src="http://picsum.photos/401"
+                        alt="immagine segnaposto"
                         class="img-fluid rounded shadow">
                     </div>
                     @endfor
-                
+
                 </div>
             </div>
             <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">

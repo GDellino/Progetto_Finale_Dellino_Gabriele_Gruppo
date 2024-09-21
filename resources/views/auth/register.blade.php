@@ -8,7 +8,7 @@
 
         <div class="row justify-content-center pb-5 my-5">
             <div class="col-4 ">
-                <form action="{{ route('register') }}" method="POST" class="p-5 login-color shadow rounded-3" >
+                <form action="{{ route('register') }}" method="POST" class="p-5 login-color shadow rounded-3 form-color" >
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome</label>

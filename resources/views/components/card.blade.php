@@ -12,7 +12,7 @@
 
 
 <div class="image-block div-cu">
-    <h5>Titolo: {{ $article->title }}</h5>
+    <h5>{{ $article->title }}</h5>
     <img src="http://picsum.photos/200" class="card-img-top" alt="Manca immagine">
     <figcaption class="">
         <h3 class="h3-1">

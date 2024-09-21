@@ -1,19 +1,19 @@
 <x-layout>
-    <div class="container">
-        <div class="row justify-content-center align-items-center text-center">
-            <div class="col-12 pt-5">
-                <h1 class="display=2">Articoli della categoria
+    <div class="container min-vh-100">
+        <div class="row justify-content-center align-items-center text-center row-log py-5">
+            <div class="col-12 ">
+                <h1 class="display-3">Articoli della categoria
                     <span class="fst-italic fw-bold">{{$category->name}}</span>
                 </h1>
             </div>
         </div>
-        <div class="row height-custom justify-content-center align-items-center py-5">
+        <div class="row height-custom justify-content-center align-items-center pt-5">
             @forelse ($articles as $article)
                 <div class="col-12 col-md-3">
                     <x-card :article="$article" />
                 </div>
             @empty
-            <div class="col-12 text-center">
+            <div class="col-12 text-center min-vh-100">
                 <h3>Non sono presenti articoli in {{$category->name}}</h3>
                 @auth
                     <a class="btn btn-primary" href="{{route('article.create')}}">Pubblica un articolo</a>
@@ -21,5 +21,5 @@
             </div>
             @endforelse
         </div>
-    </div>  
+    </div>
 </x-layout>
