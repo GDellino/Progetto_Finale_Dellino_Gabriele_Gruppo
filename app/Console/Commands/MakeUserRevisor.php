@@ -12,7 +12,7 @@ class MakeUserRevisor extends Command
      *
      * @var string
      */
-    protected $signature = 'app:make-user-revisor{email}';
+    protected $signature = 'app:make-user-revisor {email}';
 
     /**
      * The console command description.
