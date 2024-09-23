@@ -46,14 +46,14 @@ footer {
 
 .bg-img {
 
-	background-image: url(../../public/storage/images/Progetto\ senza\ titolo.png);
+	background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 
 
 	@media screen and (max-width: 1024px) {
 		background-repeat: repeat;
-		background-image: url(../../public/storage/images/Progetto\ senza\ titolo.png);
+		background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 
 	}
 }
