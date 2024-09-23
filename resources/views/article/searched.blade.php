@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid">
+    <div class="container-fluid vh-100">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-3 text-center">
@@ -14,7 +14,7 @@
                 </div>
             @empty
                 <div class="col-3">
-                    <h3 class="text-center bg-success">Non ci sono ancora articoli</h3>
+                    <h3 class="text-center ">Non ci sono ancora articoli</h3>
                 </div>
             @endforelse
         </div>
