@@ -13,7 +13,7 @@
 
 <div class="image-block div-cu">
     <h5>{{ $article->title }}</h5>
-    <img src="http://picsum.photos/200" class="card-img-top" alt="Manca immagine">
+    <img src="{{ $article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : 'http://picsum.photos/400' }}" class="card-img-top" alt="Immagine dell'articolo {{$article->title}}">
     <figcaption class="">
         <h3 class="h3-1">
             More Info

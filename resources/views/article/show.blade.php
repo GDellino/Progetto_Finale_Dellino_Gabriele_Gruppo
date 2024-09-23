@@ -7,18 +7,15 @@
         </div>
         <div class="row height-custom justify-content-center py-5">
             <div class="col-12 col-md-4 mb-3 d-flex justify-content-center ">
+                @if($article->images->count()>0)
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
+                        @foreach($article->images as $key=>$image)
                         <div class="carousel-item active">
-                            <img src="http://picsum.photos/400" class="d-block  rounded-3 shadow" alt="">
+                            <img src="{{Storage::url($image->path)}}" class="d-block  rounded-3 shadow img-custom" alt="Immagine{{ $key + 1 }} dell'articolo {{$article->title}}">
                         </div>
-                        <div class="carousel-item">
-                            <img src="http://picsum.photos/401" class="d-block  rounded-3 shadow" alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://picsum.photos/402" class="d-block  rounded-3 shadow" alt="">
-                        </div>
-
+                        @endforeach
+                            @if($article->images->count()>1)
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Precente</span>
@@ -27,7 +24,11 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Successivo</span>
                         </button>
+                        @endif
                     </div>
+                    @else
+                    <img src="http://picsum.photos/401" alt="Nessuna foto inserita dall'utente">
+                    @endif
                 </div>
             </div>
                 <div class="col-12 col-md-3 mb-3 height-custom d-flex flex-column  ">

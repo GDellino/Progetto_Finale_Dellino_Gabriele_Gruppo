@@ -365,3 +365,19 @@ footer {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+.img-preview {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120px;
+	width: 120px;
+}
+
+.img-custom{
+	height: 400px;
+	width: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
