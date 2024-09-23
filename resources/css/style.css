@@ -2,17 +2,21 @@ textarea {
 	resize: none;
 }
 
-body {
-	background-color: #D8D7D5;
+/* Body */
+.bodyCustom {
+	background-color: #000000;
 }
 
-.navbar {
+/* Navbar */
+.navbarCustom {
 	width: 100%;
-	background-color: #7e736c;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	text-decoration-color: white;
-
+	-webkit-backdrop-filter: blur(8px);
+  	backdrop-filter: blur(8px);
+	border-radius: 0px 0px 50px 50px;
 }
 
 .nav-lg {
@@ -22,14 +26,13 @@ body {
 	@media screen and (max-width: 1024px) {
 		display: flex;
 		justify-content: start;
-
-
 	}
-
 }
 
 header {
-	margin-top: 72px;
+	margin-top: 0px;
+	background-color: rgb(244, 244, 237);
+	border-radius: 50px;
 }
 
 .blue {
@@ -46,14 +49,14 @@ footer {
 
 .bg-img {
 
-	background-image: url(../../public/storage/images/Progetto\ senza\ titolo.png);
+	background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 
 
 	@media screen and (max-width: 1024px) {
 		background-repeat: repeat;
-		background-image: url(../../public/storage/images/Progetto\ senza\ titolo.png);
+		background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 
 	}
 }

@@ -5,7 +5,7 @@
     @if (session()->has('message'))
         <div class="alert alert-success text-center">{{ session('message') }}</div>
     @endif
-    <header class="container-fluid vh-75 py-5 ">
+    <header class="container-fluid vh-75">
         <div class="row custom justify-content-evenly">
             <div class="col-12 col-md-8 bg-img img-fluid">
                 {{-- <img src="../../public/storage/images/Progetto\ senza\ titolo.png" alt=""> --}}
