@@ -1,4 +1,4 @@
-<nav class="navbar navbarCustom navbar-expand-lg p-3 sticky-lg-top">
+<nav class="navbar navbarCustom navbar-expand-lg p-3 sticky-lg-top shadow">
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -9,14 +9,14 @@
             <div class="d-flex justify-content-center align-items-center">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="{{ route('homepage') }}">Home</a>
+                        <a class="nav-link active text-black" aria-current="page" href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="{{ route('article.index') }}">Tutti
+                        <a class="nav-link active text-black" aria-current="page" href="{{ route('article.index') }}">Tutti
                             gli articoli</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
                         <ul class="dropdown-menu">
                             @foreach ($categories as $category)
@@ -33,7 +33,7 @@
                     @auth
                         @if (Auth::user()->is_revisor)
                             <li class="nav-item">
-                                <a class="nav-link text-white position-relative w-sm-25"
+                                <a class="nav-link text-black position-relative w-sm-25"
                                     href="{{ route('revisor.index') }}">Zona revisore
                                     <span
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
@@ -41,7 +41,7 @@
                             </li>
                         @endif
                         <li class="nav-item dropdown position-absolute end-0 pe-5">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Ciao,{{ Auth::user()->name }}
                             </a>
@@ -54,7 +54,7 @@
                         </li>
                     @else
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Autenticazione
                             </a>

@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container min-vh-100">
+    <div class="container-fluid min-vh-100 container-custom mb-4 ">
         <div class="row justify-content-center align-items-center text-center row-log py-5">
             <div class="col-12 ">
                 <h1 class="display-3">Articoli della categoria
@@ -16,7 +16,7 @@
             <div class="col-12 text-center min-vh-100">
                 <h3>Non sono presenti articoli in {{$category->name}}</h3>
                 @auth
-                    <a class="btn btn-primary" href="{{route('article.create')}}">Pubblica un articolo</a>
+                    <a class="btn btn-primary my-5" href="{{route('article.create')}}">Pubblica un articolo</a>
                 @endauth
             </div>
             @endforelse
