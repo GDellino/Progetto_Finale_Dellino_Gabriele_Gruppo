@@ -45,7 +45,7 @@
                 <i class="fas fa-gem me-3"></i>Vuoi diventare revisore?
               </h6>
               <p>Cliccado il bottone sottostante farai richiesta al nostro admin</p>
-              <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
+              <a href="{{route('become.revisor')}}" class="btn btn-success">Lavora con noi </a>
             </div>
             <!-- Grid column -->
 
