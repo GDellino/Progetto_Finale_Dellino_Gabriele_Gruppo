@@ -33,7 +33,7 @@ textarea {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 3;
+	z-index: 1000;
 }
 
 .navBg{
@@ -64,7 +64,7 @@ header {
 
 .container-custom {
 	background-color: rgb(244, 244, 237);
-	border-radius: 0px 0px 50px 50px;
+	border-radius: 50px 50px 50px 50px;
 }
 
 .bg-img {
@@ -79,6 +79,11 @@ header {
 		background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 
 	}
+}
+
+/* Altezza navabar */
+.hNav{
+	margin-top: 135px;
 }
 
 .patua-one-regular {
@@ -151,11 +156,6 @@ header {
 	z-index: -1;
 }
 
-
-
-.border-custom {
-	border-right: green solid 2px;
-}
 
 .div-cu {
 	position: relative;
@@ -254,13 +254,6 @@ header {
 
 .row-log {
 	margin-top: 10px;
-}
-
-/* color form */
-.form-color {
-	background-color: #7e736c;
-	height: 35rem;
-	width: 30rem;
 }
 
 .btn-form {

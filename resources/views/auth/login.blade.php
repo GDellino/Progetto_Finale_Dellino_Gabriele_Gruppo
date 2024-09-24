@@ -1,15 +1,15 @@
 <x-layout>
-    <div class="container-fluid min-vh-100 container-custom mb-5">
+    <div class="container-fluid container-custom mb-5 hNav">
         <div class="row row-log">
             <div class="col-12 mt-5 ">
                 <h1 class="text-center">Accedi</h1>
             </div>
         </div>
 
-        <div class="row justify-content-center align-items-center mb-5  ">
-            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center p-5">
+        <div class="row justify-content-end mb-5 ">
+            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center bg-danger  p-5">
                         <form action="{{ route('login') }}" method="POST"
-                            class=" p-5 rounded-5 form-color d-flex flex-column justify-content-center">
+                            class=" p-5 rounded-5 d-flex flex-column justify-content-center">
                             @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label ">Email</label>
