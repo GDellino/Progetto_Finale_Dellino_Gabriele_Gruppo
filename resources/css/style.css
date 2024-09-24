@@ -10,13 +10,16 @@ textarea {
 /* Navbar */
 .navbarCustom {
 	width: 100%;
-	height: 100px;
+	height: 75px;
 	display: flex;
 	justify-content: center;
 	text-decoration-color: white;
 	-webkit-backdrop-filter: blur(8px);
-  	backdrop-filter: blur(8px);
-	border-radius: 0px 0px 50px 50px;
+	backdrop-filter: blur(100px);
+	background-color: rgba(252, 252, 252, 0.486);
+
+
+
 }
 
 .nav-lg {
@@ -30,9 +33,9 @@ textarea {
 }
 
 header {
-	margin-top: 0px;
+	margin-top: 10px;
 	background-color: rgb(244, 244, 237);
-	border-radius: 50px;
+	border-radius: 0px 0px 50px 50px;
 }
 
 .blue {
@@ -40,11 +43,17 @@ header {
 }
 
 footer {
-	background-color: #7e736c;
+	background-color: rgb(244, 244, 237);
+
 }
 
 .custom {
 	height: 75vh;
+}
+
+.container-custom {
+	background-color: rgb(244, 244, 237);
+	border-radius: 0px 0px 50px 50px;
 }
 
 .bg-img {
@@ -132,7 +141,7 @@ footer {
 }
 
 .section-color {
-	background-color: #DDDCDA;
+	background-color: rgb(244, 244, 237);
 }
 
 .border-custom {
@@ -145,7 +154,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 300px;
+	width: 370px;
 	min-width: 300px;
 	height: 500px;
 	border-radius: 10px;
@@ -236,12 +245,14 @@ footer {
 }
 
 .row-log {
-	margin-top: 72px;
+	margin-top: 10px;
 }
 
 /* color form */
 .form-color {
 	background-color: #7e736c;
+	height: 35rem;
+	width: 30rem;
 }
 
 .btn-form {
@@ -278,6 +289,7 @@ footer {
 	pointer-events: all;
 	cursor: pointer;
 }
+
 /* note style */
 .quote-container {
 
@@ -303,7 +315,7 @@ footer {
 }
 
 .yellow {
-	background:  #6b635e ;
+	background: #6b635e;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	-o-transform: rotate(2deg);
@@ -323,7 +335,7 @@ footer {
 }
 
 .pin:after {
-	background-color:  #728E17;
+	background-color: #728E17;
 	background-image: radial-gradient(25% 25%, circle, hsla(0, 0%, 100%, .3), hsla(0, 0%, 0%, .3));
 	border-radius: 50%;
 	box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .1), inset 3px 3px 3px hsla(0, 0%, 100%, .2), inset -3px -3px 3px hsla(0, 0%, 0%, .2), 23px 20px 3px hsla(0, 0%, 0%, .15);
@@ -374,10 +386,14 @@ footer {
 	width: 120px;
 }
 
-.img-custom{
+.img-custom {
 	height: 400px;
 	width: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.height-log {
+	height: 43rem;
 }

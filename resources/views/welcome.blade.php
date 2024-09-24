@@ -6,6 +6,7 @@
         <div class="alert alert-success text-center">{{ session('message') }}</div>
     @endif
     <header class="container-fluid vh-75">
+
         <div class="row custom justify-content-evenly">
             <div class="col-12 col-md-8 bg-img img-fluid">
                 {{-- <img src="../../public/storage/images/Progetto\ senza\ titolo.png" alt=""> --}}
@@ -22,13 +23,13 @@
         </div>
     </header>
 
-     <div class="wh-100 bg-white py-3">
+     <div class="wh-100  py-3">
 
      </div>
      <section class="section-color">
          <div class="container-fluid text-center py-5 ">
-            <h2 class="py-5 text-center">Ultimi Annunci</h2>
-            <div class='row justify-content-center align-items-center gap-3 '>
+            <h1 class="py-5 text-center">Ultimi Annunci</h1>
+            <div class='row justify-content-evenly align-items-center gap-5 '>
                 @forelse ($articles as $article)
                     <div class=" col-12 col-md-3 d-flex justify-content-center align-items-center  ">
                         <x-card :article="$article" />
@@ -41,6 +42,8 @@
             </div>
         </div>
     </section>
+
+    <div class="wh-100  py-3">
 
 
 
