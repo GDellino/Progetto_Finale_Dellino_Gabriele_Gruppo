@@ -23,6 +23,6 @@
         <p>{{__('ui.description')}}: {{$article->created_at->format('d/m/Y')}}</p>
         <a href="{{ route('article.show', compact('article')) }}" class="btn btn-primary btn-card">{{__('ui.details')}}</a>
         <a href="{{ route('byCategory', ['category' => $article->category]) }}"
-            class="btn btn-outline-info btn-card">{{ $article->category->name }}</a>
+            class="btn btn-outline-info btn-card">{{ $article->category->name }} </a>
     </figcaption>
 </div>

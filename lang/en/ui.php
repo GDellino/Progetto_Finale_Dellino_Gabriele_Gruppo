@@ -37,6 +37,8 @@ return[
     'publishArticle' => 'Publish an Article',
     'noArticlesYet' => 'No articles yet',
     'searchResults' => 'Search Results',
+    'photo preview' =>'Photo preview',
+    'author'=>'Author',
     // frase
     'phrase'=> 'Quality and convenience in just one click!',
     // categorie

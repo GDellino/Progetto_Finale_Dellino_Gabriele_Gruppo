@@ -36,6 +36,8 @@ return[
     'publishArticle' => 'Publicar un artículo',
     'noArticlesYet' => 'Aún no hay artículos',
     'searchResults' => 'Resultados de búsqueda',
+    'photo preview' => 'Vista previa de la foto',
+    'author'=>'Autor',
     // frase
     'phrase'=> 'Calidad y conveniencia en un solo clic!',
     // categorie
