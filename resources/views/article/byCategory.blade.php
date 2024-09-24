@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid min-vh-100 container-custom mb-4 ">
+    <div class="container-fluid min-vh-100 container-custom mb-4 hNav ">
         <div class="row justify-content-center align-items-center text-center row-log py-5">
             <div class="col-12 ">
                 <h1 class="display-3">Articoli della categoria

@@ -1,4 +1,4 @@
-<form wire:submit="save" class="shadow p-4 rounded-3 form-color">
+<form wire:submit="save" class="shadow p-4 rounded-3 form-color ">
     @if (session()->has('success'))
         <div class="alert alert-success text-center">{{ session('success') }}</div>
     @endif

@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid container-custom ">
+    <div class="container-fluid beige hNav ">
         <div class="row row-log">
             <div class="col-12">
                 <h1 class="display-3 text-center py-3 ">

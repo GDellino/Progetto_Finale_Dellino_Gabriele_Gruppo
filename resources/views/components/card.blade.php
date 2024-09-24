@@ -12,11 +12,11 @@
 
 
 <div class="image-block div-cu">
-    <h5>{{ $article->title }}</h5>
+    <h5 class="text-black">{{ $article->title }}</h5>
     <img src="{{ $article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300) : 'http://picsum.photos/400' }}" class="card-img-top" alt="Immagine dell'articolo {{$article->title}}">
     <figcaption class="">
         <h3 class="h3-1">
-            More Info
+            Più Info
         </h3>
         <p class="text-truncate">Descrizione: {{ $article->description }}</p>
         <p>Prezzo: {{ $article->price }}€</p>

@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container vh-100 d-flex flex-column   ">
+    <div class="container-fluid min-vh-100 d-flex flex-column hNav container-custom   ">
         {{-- <div class="row row-log ">
         </div> --}}
         <div class="row row-log d-flex justify-content-center">

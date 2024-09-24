@@ -41,6 +41,18 @@ textarea {
 	backdrop-filter: blur(5px);
 	border-radius: 0px 0px 50px 50px;
 }
+.navBgLogin{
+	background-color: rgba(255, 255, 255, 0.508);
+	backdrop-filter: blur(5px);
+	border-radius: 0px 0px 50px 50px;
+	width: 100%;
+	min-height: 125px;
+	text-decoration-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
 
 .nav-lg {
 	display: flex;
@@ -66,12 +78,18 @@ header {
 	background-color: rgb(244, 244, 237);
 	border-radius: 50px 50px 50px 50px;
 }
+/* GrandezzaImg */
+.imgCustom{
+	height: 500px;
+	
+	
+}
 
-.bg-img {
+/* .bg-img {
 
-	background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
+	background-image: url(../../public/storage/images/labrador.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	
 
 
 	@media screen and (max-width: 1024px) {
@@ -79,11 +97,11 @@ header {
 		background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
 
 	}
-}
+} */
 
 /* Altezza navabar */
 .hNav{
-	margin-top: 135px;
+	margin-top: 140px;
 }
 
 .patua-one-regular {
@@ -102,13 +120,17 @@ header {
 .alt {
 	height: 20px;
 }
-
+/* bottone Register */
+.colorRegister{
+	background-color: rgb(158, 147, 195);
+}
+/* Bottone welcome */
 .btn-wel {
 	font-family: var(--font-sans);
 	font-weight: var(--font-weight-6);
 	font-size: var(--font-size-5);
 	color: var(--gray-8);
-	background: rgb(245, 245, 144);
+	background:  rgb(0, 0, 0);
 	border: 0;
 	padding: var(--size-4) var(--size-8);
 	transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
@@ -133,7 +155,7 @@ header {
 	content: "";
 	position: absolute;
 	inset: calc(var(--size-3) * -1);
-	border: var(--size-2) solid #728E17;
+	border: var(--size-2) solid rgb(255, 191, 0);
 	transform: scale(var(--border-scale, 0));
 	transition: transform 0.125s;
 
@@ -205,7 +227,9 @@ header {
 		transform: scale(1);
 		transition: 0.25s ease;
 		z-index: 999;
-
+		backdrop-filter: blur(10px);
+		background-color:rgba(255, 255, 255, 0.09);
+		
 	}
 
 	img {
@@ -257,7 +281,8 @@ header {
 }
 
 .btn-form {
-	background-color: rgb(245, 245, 144);
+	background-color: #E1B9F4;
+	
 }
 
 .page-link {
@@ -316,7 +341,7 @@ header {
 }
 
 .yellow {
-	background: #6b635e;
+	background: rgb(255, 191, 0);
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	-o-transform: rotate(2deg);

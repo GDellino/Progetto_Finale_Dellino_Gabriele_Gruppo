@@ -25,7 +25,7 @@
 
     <x-footer />
 
-    <script src="./main.js"></script>
+   
 </body>
 
 </html>

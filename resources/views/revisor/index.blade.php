@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid pt-5 min-vh-100 container-custom mb-5">
+    <div class="container-fluid pt-5 min-vh-100 container-custom mb-3 hNav">
         <div class="row row-log">
             <div class="col-3">
                 <div class="rounded shadow">
@@ -57,7 +57,7 @@
             </div>
     </div>
 @else
-    <div class="row justify-content-center align-items-center text-center height-custom">
+    <div class="row justify-content-center align-items-center text-center custom">
         <div class="col-12">
             <h1 class="fst-italic display-4">Non ci sono articoli da revisionare</h1>
             <a href="{{ route('homepage') }}" class="mt-5 btn btn-primary">Torna alla homepage</a>

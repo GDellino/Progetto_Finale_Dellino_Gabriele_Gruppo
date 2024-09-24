@@ -1,4 +1,10 @@
-<nav class="navbar navbarCustom navbar-expand-lg p-3">
+<nav class="navbar  navbar-expand-lg p-3 @if( Route::currentRouteName() == 'login' ) navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'register' ) navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'article.index') navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'article.show') navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'article.create') navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'revisor.index') navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'byCategory') navBgLogin @else navbarCustom @endif">
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

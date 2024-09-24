@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid min-vh-100 container-custom mb-5">
+    <div class="container-fluid min-vh-100 container-custom mb-5 hNav">
         <div class="row justify-content-center align-items-center text-center my-3 row-log ">
             <div class="col-12 my-4">
                 <h1 class="display-3"> {{ $article->title }}</h1>
@@ -13,7 +13,7 @@
                             @foreach ($article->images as $key => $image)
                                 <div class="carousel-item active @if ($loop->first) active @endif">
                                     <img src="{{ $image->getUrl(300, 300)}}"
-                                        class="d-block  rounded-3 shadow "
+                                        class="d-block  rounded-5 shadow "
                                         {{-- tolto img-custom --}}
                                         alt="Immagine{{ $key + 1 }} dell'articolo {{ $article->title }}">
                                 </div>
