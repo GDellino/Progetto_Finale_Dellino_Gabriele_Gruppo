@@ -5,7 +5,7 @@
     @if (session()->has('message'))
         <div class="alert alert-success text-center">{{ session('message') }}</div>
     @endif
-    <header class="container-fluid vh-75">
+    <header class="container-fluid vh-75 beige">
 
         <div class="row custom justify-content-evenly">
             <div class="col-12 col-md-8 bg-img img-fluid">
@@ -26,9 +26,9 @@
      <div class="wh-100  py-3">
 
      </div>
-     <section class="section-color">
+     <section class="sectionColor ">
          <div class="container-fluid text-center py-5 ">
-            <h1 class="py-5 text-center">Ultimi Annunci</h1>
+            <h1 class="py-5 text-center titleColor">Ultimi Annunci</h1>
             <div class='row justify-content-evenly align-items-center gap-5 '>
                 @forelse ($articles as $article)
                     <div class=" col-12 col-md-3 d-flex justify-content-center align-items-center  ">

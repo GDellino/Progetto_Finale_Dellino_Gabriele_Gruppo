@@ -1,17 +1,27 @@
-<nav class="navbar navbarCustom navbar-expand-lg p-3 sticky-lg-top shadow">
+<nav class="navbar navbarCustom navbar-expand-lg p-3">
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
-        {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> --}}
-        <x-_locale lang="it" />
-        <x-_locale lang="en" />
-        <x-_locale lang="es" />
+        </button>
+        
 
         <div class="collapse navbar-collapse nav-lg" id="navbarSupportedContent">
-            <div class="d-flex justify-content-center align-items-center">
-                <ul class="navbar-nav ">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <x-_locale lang="it" />
+                </li>
+                <li class="nav-item">
+                   <x-_locale lang="en" />
+                </li>
+                <li class="nav-item">
+                    <x-_locale lang="es" />
+                </li>
+            </ul>
+            
+            {{-- <div class="d-flex justify-content-center align-items-center"> --}}
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active text-black" aria-current="page" href="{{ route('homepage') }}">Home</a>
                     </li>
@@ -83,7 +93,7 @@
                     </form>
                 </ul>
 
-            </div>
+            {{-- </div> --}}
         </div>
     </div>
 </nav>
