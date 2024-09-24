@@ -15,10 +15,10 @@
             <div class="col-12 col-md-5 d-flex flex-column justify-content-center aling-items-center  ">
                 <div class="h-50 d-flex flex-column justify-content-end align-items-center ">
                     <h1 class="text-center titolo">Presto.it</h1>
-                    <h4 class="text-center">Vendi cio che vuoi!!!!</h4>
+                    <h4 class="text-center">{{__('ui.phrase')}}</h4>
                 </div>
                 <div class="d-flex justify-content-center align-items-center h-50">
-                    <a href="{{ route('article.create') }}" class="btn-wel text-white ">Inserisci Annuncio</a>
+                    <a href="{{ route('article.create') }}" class="btn-wel text-white ">{{__('ui.insertAd')}}</a>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
     <section class="beige mb-3 ">
         <div class="sectionColor">
             <div class="container-fluid text-center py-5 ">
-                <h1 class="py-5 text-center titleColor">Ultimi Annunci</h1>
+                <h1 class="py-5 text-center titleColor">{{__('ui.latestAds')}}</h1>
                 <div class='row justify-content-evenly align-items-center gap-5 '>
                     @forelse ($articles as $article)
                         <div class=" col-12 col-md-3 d-flex justify-content-center align-items-center  ">
@@ -40,8 +40,8 @@
                     @endforelse
                 </div>
             </div>
-        </div>   
+        </div>
     </section>
- 
+
 
 </x-layout>

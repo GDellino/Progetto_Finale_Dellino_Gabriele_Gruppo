@@ -4,14 +4,15 @@
 @if( Route::currentRouteName() == 'article.show') navBgLogin @else navbarCustom @endif
 @if( Route::currentRouteName() == 'article.create') navBgLogin @else navbarCustom @endif
 @if( Route::currentRouteName() == 'revisor.index') navBgLogin @else navbarCustom @endif
-@if( Route::currentRouteName() == 'byCategory') navBgLogin @else navbarCustom @endif">
+@if( Route::currentRouteName() == 'byCategory') navBgLogin @else navbarCustom @endif
+@if( Route::currentRouteName() == 'article.search') navBgLogin @else navbarCustom @endif">
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
 
         <div class="collapse navbar-collapse nav-lg" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -25,7 +26,7 @@
                     <x-_locale lang="es" />
                 </li>
             </ul>
-            
+
             {{-- <div class="d-flex justify-content-center align-items-center"> --}}
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -36,11 +37,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-black" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.categories')}}</a>
                         <ul class="dropdown-menu">
                             @foreach ($categories as $category)
                                 <li><a class="dropdown-item"
-                                        href="{{ route('byCategory', ['category' => $category]) }}">{{ $category->name }}</a>
+                                        href="{{ route('byCategory', ['category' => $category]) }}">{{__("ui.$category->name")}}</a>
                                 </li>
                                 @if (!$loop->last)
                                     <hr class="dropdown-divider">
@@ -53,7 +54,7 @@
                         @if (Auth::user()->is_revisor)
                             <li class="nav-item">
                                 <a class="nav-link text-black position-relative w-sm-25"
-                                    href="{{ route('revisor.index') }}">Zona revisore
+                                    href="{{ route('revisor.index') }}">{{__('ui.reviewerArea')}}
                                     <span
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
                                 </a>
@@ -62,7 +63,7 @@
                         <li class="nav-item dropdown position-absolute end-0 pe-5">
                             <a class="nav-link dropdown-toggle text-black" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Ciao,{{ Auth::user()->name }}
+                                {{__('ui.hello')}},{{ Auth::user()->name }}
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-item btn" href="#"
@@ -75,11 +76,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-black" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Autenticazione
+                                {{__('ui.authentication')}}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="{{ route('login') }}">Accedi</a></li>
-                                <li><a class="nav-link" href="{{ route('register') }}">Registrati</a></li>
+                                <li><a class="nav-link" href="{{ route('login') }}">{{__('ui.login')}}</a></li>
+                                <li><a class="nav-link" href="{{ route('register') }}">{{__('ui.register')}}</a></li>
                             </ul>
                         </li>
                     @endauth

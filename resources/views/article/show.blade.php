@@ -41,9 +41,9 @@
                     <div class="quote-container">
                         <i class="pin"></i>
                         <blockquote class="note yellow ">
-                            <h3 class="text-white fw-bold text-center">Descrizione</h3>
+                            <h3 class="text-white fw-bold text-center">{{__("ui.description")}}</h3>
                             <p class="text-white">{{ $article->description }}</p>
-                            <h4 class="fw-blod text-white fixed-bottom text-end p-3">Prezzo: {{ $article->price }} €
+                            <h4 class="fw-blod text-white fixed-bottom text-end p-3">{{__("ui.price")}}: {{ $article->price }} €
                             </h4>
                         </blockquote>
                     </div>

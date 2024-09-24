@@ -25,8 +25,10 @@ class DatabaseSeeder extends Seeder
         'giocattoli',
         'casa'
     ];
+
     public function run(): void
     {
+
         foreach($this->categories as $category){
             Category::create([
                 'name'=>$category

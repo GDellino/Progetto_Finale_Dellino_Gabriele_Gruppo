@@ -2,7 +2,7 @@
     <div class="container-fluid  container-custom   hNav">
         <div class="row my-3 row-log">
             <div class="col-12 py-5">
-                <h1 class="display-4 text-center">Registrati</h1>
+                <h1 class="display-4 text-center">{{__('ui.register')}}</h1>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
                 <form action="{{ route('register') }}" method="POST" class="p-5 login-color w-75 rounded-3 form-color" >
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
+                        <label for="name" class="form-label">{{__('ui.name')}}</label>
                         <div class="position-relative">
                             <span class="material-symbols-outlined">
                                 person
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="password_confirmation" class="form-label">Conferma password</label>
+                        <label for="password_confirmation" class="form-label">{{__('ui.confirmPassword')}}</label>
                         <div class="position-relative">
                             <span class="material-symbols-outlined">
                                 lock
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center my-3">
-                        <button type="submit" class="btn  colorRegister">Continua</button>
+                        <button type="submit" class="btn  colorRegister">{{__('ui.continue')}}</button>
                     </div>
                 </form>
             </div>

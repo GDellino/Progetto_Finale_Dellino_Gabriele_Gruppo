@@ -3,7 +3,7 @@
         <div class="row row-log">
             <div class="col-12">
                 <h1 class="display-3 text-center py-3 ">
-                    Tutti gli articoli
+                    {{__('ui.allArticles')}}
                 </h1>
 
             </div>
@@ -16,7 +16,7 @@
                     </div>
                 @empty
                     <div class="col-3">
-                        <h3 class="text-center bg-success">Non ci sono ancora articoli</h3>
+                        <h3 class="text-center bg-success">{{__('ui.searchResults')}}</h3>
                     </div>
                 @endforelse
             </div>

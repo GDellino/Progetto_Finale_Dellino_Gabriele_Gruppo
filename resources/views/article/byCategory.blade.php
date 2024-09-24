@@ -2,8 +2,8 @@
     <div class="container-fluid min-vh-100 container-custom mb-4 hNav ">
         <div class="row justify-content-center align-items-center text-center row-log py-5">
             <div class="col-12 ">
-                <h1 class="display-3">Articoli della categoria
-                    <span class="fst-italic fw-bold">{{$category->name}}</span>
+                <h1 class="display-3">{{__('ui.categoryArticles')}}
+                    <span class="fst-italic fw-bold">{{__("ui.$category->name")}}</span>
                 </h1>
             </div>
         </div>
@@ -14,9 +14,9 @@
                 </div>
             @empty
             <div class="col-12 text-center min-vh-100">
-                <h3>Non sono presenti articoli in {{$category->name}}</h3>
+                <h3>{{__("ui.noArticles")}} {{__("ui.$category->name")}}</h3>
                 @auth
-                    <a class="btn btn-primary my-5" href="{{route('article.create')}}">Pubblica un articolo</a>
+                    <a class="btn btn-primary my-5" href="{{route('article.create')}}">{{__("ui.publishArticle")}}</a>
                 @endauth
             </div>
             @endforelse
