@@ -27,3 +27,6 @@ Route::patch('/reject/{article}',[RevisorController::class,'reject'])->name('rej
 Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}',[RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+// Rotta Lingua
+Route::post('/lingua/{lang}',[PublicController::class, 'setLanguage'])->name('setLocale');
+

@@ -1,10 +1,14 @@
 <nav class="navbar navbarCustom navbar-expand-lg p-3 sticky-lg-top shadow">
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> --}}
+        <x-_locale lang="it" />
+        <x-_locale lang="en" />
+        <x-_locale lang="es" />
+
         <div class="collapse navbar-collapse nav-lg" id="navbarSupportedContent">
             <div class="d-flex justify-content-center align-items-center">
                 <ul class="navbar-nav ">
@@ -12,8 +16,7 @@
                         <a class="nav-link active text-black" aria-current="page" href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-black" aria-current="page" href="{{ route('article.index') }}">Tutti
-                            gli articoli</a>
+                        <a class="nav-link active text-black" aria-current="page" href="{{ route('article.index') }}">{{__('ui.allArticles')}}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-black" href="#" role="button"
