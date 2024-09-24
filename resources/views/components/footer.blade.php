@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start text-muted w-100 bottom-0  ">
+<footer class="text-center text-lg-start text-muted w-100 bottom-0 footerColor">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -56,13 +56,7 @@
                 Products
               </h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
                 <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
               </p>
               <p>
                 <a href="#!" class="text-reset">Laravel</a>
@@ -76,12 +70,6 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Useful links
               </h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Settings</a>
-              </p>
               <p>
                 <a href="#!" class="text-reset">Orders</a>
               </p>
@@ -100,8 +88,6 @@
                 <i class="fas fa-envelope me-3"></i>
                 info@example.com
               </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
             </div>
             <!-- Grid column -->
           </div>
@@ -112,8 +98,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="">Presto.it</a>
       </div>
       <!-- Copyright -->
     </footer>

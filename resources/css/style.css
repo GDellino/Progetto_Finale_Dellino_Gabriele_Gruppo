@@ -1,25 +1,45 @@
 textarea {
 	resize: none;
 }
+/* Colori */
+.beige{
+	background-color: rgb(244, 244, 237);
+}
+
+.titleColor{
+	color: rgb(244, 244, 237);
+}
+
+.sectionColor {
+	background-color: rgb(0, 0, 0);
+	border-radius: 0px 0px 50px 50px;
+}
+
+.footerColor {
+	background-color: rgb(244, 244, 237);
+}
 
 /* Body */
 .bodyCustom {
 	background-color: #000000;
+	position: relative;
 }
 
 /* Navbar */
 .navbarCustom {
 	width: 100%;
-	height: 75px;
-	display: flex;
-	justify-content: center;
+	min-height: 125px;
 	text-decoration-color: white;
-	-webkit-backdrop-filter: blur(8px);
-	backdrop-filter: blur(100px);
-	background-color: rgba(252, 252, 252, 0.486);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
 
-
-
+.navBg{
+	background-color: rgba(255, 255, 255, 0.508);
+	backdrop-filter: blur(5px);
+	border-radius: 0px 0px 50px 50px;
 }
 
 .nav-lg {
@@ -32,19 +52,10 @@ textarea {
 	}
 }
 
+/* header */
 header {
 	margin-top: 10px;
-	background-color: rgb(244, 244, 237);
-	border-radius: 0px 0px 50px 50px;
-}
-
-.blue {
-	background-color: rgb(18, 69, 89);
-}
-
-footer {
-	background-color: rgb(244, 244, 237);
-
+	border-radius: 50px 50px 50px 50px;
 }
 
 .custom {
@@ -140,13 +151,10 @@ footer {
 	z-index: -1;
 }
 
-.section-color {
-	background-color: rgb(244, 244, 237);
-}
+
 
 .border-custom {
 	border-right: green solid 2px;
-
 }
 
 .div-cu {

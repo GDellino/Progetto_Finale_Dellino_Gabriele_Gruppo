@@ -11,9 +11,10 @@
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             @foreach ($article->images as $key => $image)
-                                <div class="carousel-item active">
-                                    <img src="{{ Storage::url($image->path) }}"
-                                        class="d-block  rounded-3 shadow img-custom"
+                                <div class="carousel-item active @if ($loop->first) active @endif">
+                                    <img src="{{ $image->getUrl(300, 300)}}"
+                                        class="d-block  rounded-3 shadow "
+                                        {{-- tolto img-custom --}}
                                         alt="Immagine{{ $key + 1 }} dell'articolo {{ $article->title }}">
                                 </div>
                             @endforeach
