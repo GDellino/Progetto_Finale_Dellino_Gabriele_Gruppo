@@ -38,6 +38,10 @@ textarea {
 	top: 0;
 	left: 0;
 	z-index: 1000;
+	font-family: "Junge", cursive;
+		
+	  
+	  
 }
 
 .navBg{
@@ -84,8 +88,9 @@ header {
 }
 /* GrandezzaImg */
 .imgCustom{
-	height: 500px;
-	
+	height: 800px;
+	width: 700px;
+	margin-top: 130px;
 	
 }
 
@@ -115,7 +120,7 @@ header {
 }
 
 .titolo {
-	font-family: "Anton", sans-serif;
+	font-family: "Abril Fatface", serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 100px;
@@ -130,7 +135,7 @@ header {
 }
 /* Bottone welcome */
 .btn-wel {
-	font-family: var(--font-sans);
+	font-family: "Abril Fatface", serif;
 	font-weight: var(--font-weight-6);
 	font-size: var(--font-size-5);
 	color: var(--gray-8);
@@ -216,7 +221,7 @@ header {
 			bottom: 0;
 		}
 	}
-
+	
 	h5 {
 		position: absolute;
 		top: 50px;
@@ -279,7 +284,28 @@ header {
 		}
 	}
 }
+h4{
 
+
+	font-family: "Junge", cursive;
+	color: #9e9d9d;
+  
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0em solid;
+    border-right: 0em solid transparent;
+    border-bottom: 0;
+    border-left: 0em solid transparent;
+}
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color:  rgb(244, 244, 237) !important;
+}
 .row-log {
 	margin-top: 10px;
 }

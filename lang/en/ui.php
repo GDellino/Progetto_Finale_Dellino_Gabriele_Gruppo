@@ -40,7 +40,7 @@ return[
     'photo preview' =>'Photo preview',
     'author'=>'Author',
     // frase
-    'phrase'=> 'Quality and convenience in just one click!',
+    'phrase'=> 'Publish your ad today and reach thousands of interested buyers. Sell quickly and stress-free with our secure and reliable platform',
     // categorie
     'libri'=> 'Books',
     'film'=> 'Movies',

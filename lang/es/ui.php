@@ -39,7 +39,7 @@ return[
     'photo preview' => 'Vista previa de la foto',
     'author'=>'Autor',
     // frase
-    'phrase'=> 'Calidad y conveniencia en un solo clic!',
+    'phrase'=> 'Publica tu anuncio hoy mismo y llega a miles de compradores interesados. ¡Vende rápidamente y sin estrés con nuestra plataforma segura y confiable',
     // categorie
     'libri'=> 'Libros',
     'film'=> 'Películas',
