@@ -24,7 +24,11 @@ textarea {
 	background-color: #000000;
 	position: relative;
 }
-
+.logo{
+	height: 50px;
+	width: 130px;
+		
+}
 /* Navbar */
 .navbarCustom {
 	width: 100%;

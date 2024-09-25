@@ -7,7 +7,7 @@
 @if( Route::currentRouteName() == 'byCategory') navBgLogin @else navbarCustom @endif
 @if( Route::currentRouteName() == 'article.search') navBgLogin @else navbarCustom @endif">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="{{ route('homepage') }}">Presto</a>
+        <a class="navbar-brand" href="{{ route('homepage') }}"><img class="logo" src="/storage/images/logofinale3.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
