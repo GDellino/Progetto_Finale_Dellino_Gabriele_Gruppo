@@ -9,18 +9,20 @@
 
     <header class="container-fluid vh-100 beige">
         <div class="row custom justify-content-evenly">
-            <div class="col-12 col-md-7 d-flex align-items-center justify-content-center  ">
-                <img class="imgCustom rounded-5 " src='/storage/images/provabg2.jpg 'alt="">
-            </div>
-            <div class="col-12 col-md-5 d-flex flex-column  ">
-                <div class="h-50 d-flex flex-column justify-content-end align-items-start ">
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-end ">
+                <div class="h-50 d-flex flex-column justify-content-end align-items-start ms-5 ">
                     <h1 class=" titolo">Presto.it</h1>
                     <h4 class="mt-3">{{__('ui.phrase')}}</h4>
                 </div>
-                <div class="d-flex justify-content-start align-items-center h-50">
+                <div class="d-flex justify-content-start align-items-center h-25 ms-5">
                     <a href="{{ route('article.create') }}" class="btn-wel text-white ">{{__('ui.insertAd')}}</a>
                 </div>
+                
             </div>
+            <div class="col-12 col-md-7 d-flex align-items-center justify-content-center  ">
+                <img class="imgCustom rounded-5 " src='/storage/images/provabg2.jpg 'alt="">
+            </div>
+            
         </div>
     </header>
 
