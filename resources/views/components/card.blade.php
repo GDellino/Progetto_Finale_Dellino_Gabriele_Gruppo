@@ -6,10 +6,10 @@
             {{__('ui.moreInfo')}}
         </h3>
         <p class="text-truncate">{{__('ui.description')}}: {{ $article->description }}</p>
-        <p>{{__('ui.description')}}: {{ $article->price }}€</p>
-        <p>{{__('ui.description')}}: {{$article->created_at->format('d/m/Y')}}</p>
-        <a href="{{ route('article.show', compact('article')) }}" class="btn btn-primary btn-card">{{__('ui.details')}}</a>
+        <p>{{__('ui.price')}}: {{ $article->price }}€</p>
+        <p>{{__('ui.createdAt')}}: {{$article->created_at->format('d/m/Y')}}</p>
+        <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning btn-card text-black">{{__('ui.details')}}</a>
         <a href="{{ route('byCategory', ['category' => $article->category]) }}"
-            class="btn btn-outline-info btn-card">{{ $article->category->name }} </a>
+            class="btn btn-card btn-light text-black ">{{ $article->category->name }} </a>
     </figcaption>
 </div>

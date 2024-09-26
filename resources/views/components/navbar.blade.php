@@ -54,7 +54,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false">{{ __('ui.categories') }}</a>
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)
-                            <li><a class="dropdown-item"
+                            <li><a class="dropdown-item text-dark"
                                     href="{{ route('byCategory', ['category' => $category]) }}">{{ __("ui.$category->name") }}</a>
                             </li>
                             @if (!$loop->last)
@@ -66,7 +66,7 @@
                 </li>
                 @auth
                     @if (Auth::user()->is_revisor)
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link text-black position-relative w-sm-25"
                                 href="{{ route('revisor.index') }}">{{ __('ui.reviewerArea') }}
                                 <span
@@ -80,7 +80,7 @@
                             {{ __('ui.hello') }},{{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu ">
-                            <li><a class="nav-item btn " href="#"
+                            <li><a class="nav-item btn text-dark " href="#"
                                     onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                             </li>
                             <form action="{{ route('logout') }}" method="POST" id="form-logout">@csrf</form>
@@ -93,8 +93,8 @@
                             {{ __('ui.authentication') }}
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('ui.login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('ui.register') }}</a></li>
+                            <li><a class="nav-link text-dark" href="{{ route('login') }}">{{ __('ui.login') }}</a></li>
+                            <li><a class="nav-link text-dark" href="{{ route('register') }}">{{ __('ui.register') }}</a></li>
                         </ul>
                     </li>
                 @endauth

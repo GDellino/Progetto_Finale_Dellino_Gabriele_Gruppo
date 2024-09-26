@@ -22,7 +22,7 @@ return[
     'publishArticle' => 'Pubblica un articolo',
     'noArticlesToReview' => 'Non ci sono articoli da revisionare',
     'backToHomepage' => 'Torna alla homepage',
-    'workWithUs' => 'Lavora con noi',
+    'workWithUs' => 'Invia',
     'reviewerDashboard' => 'Dashboard Revisore',
     'accept' => 'Accetta',
     'reject' => 'Rifiuta',

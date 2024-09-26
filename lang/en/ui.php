@@ -23,7 +23,7 @@ return[
     'publishArticle' => 'Publish an article',
     'noArticlesToReview' => 'No articles to review',
     'backToHomepage' => 'Back to homepage',
-    'workWithUs' => 'Work with us',
+    'workWithUs' => 'Send',
     'reviewerDashboard' => 'Reviewer Dashboard',
     'accept' => 'Accept',
     'reject' => 'Reject',

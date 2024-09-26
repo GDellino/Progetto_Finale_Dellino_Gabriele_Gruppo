@@ -24,9 +24,8 @@ Route::patch('/accept/{article}',[RevisorController::class,'accept'])->name('acc
 Route::patch('/reject/{article}',[RevisorController::class,'reject'])->name('reject');
 
 // Rotte Mail
-Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::post('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}',[RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
 // Rotta Lingua
 Route::post('/lingua/{lang}',[PublicController::class, 'setLanguage'])->name('setLocale');
-

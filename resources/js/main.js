@@ -16,7 +16,7 @@ let secondNumber = document.querySelector('#secondNumber');
 let thirdNumber = document.querySelector('#thirdNumber');
 
 function createInterval(total, catchNumber , time ){
-    let counter = 0;    
+    let counter = 0;
     let interval = setInterval( ()=>{
         if(counter < total){
             counter ++;
@@ -40,4 +40,6 @@ let observer = new IntersectionObserver( (entries)=>{
 } );
 
 // chi deve osservare
-observer.observe(firstNumber)
+if (firstNumber){
+    observer.observe(firstNumber);
+}

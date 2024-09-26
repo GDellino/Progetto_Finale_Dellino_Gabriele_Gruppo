@@ -9,50 +9,39 @@
         <p class="pTitle ">DIVENTA NOSTRO REVISORE</p>
     </section>
 
-    <div class="container-fluid bg-danger">
+    <div class="container-fluid bg-black">
         <div class="row rowFooter">
-            <div class="col-12 col-md-6 border-top border-bottom border-end">
+            <div class="col-12 col-md-6 border-top border-bottom border-end d-flex justify-content-center  ">
                 <!-- Section: Social media -->
-                <section class="d-flex justify-content-center justify-content-lg-between p-4">
-                    <!-- Left -->
-                    <div class="me-5 d-none d-lg-block">
-                        <span>Get connected with us on social networks:</span>
+                <section class="d-flex flex-column justify-content-center p-4">
+                    <div class="center">
+                        <div id="social-test">
+                            <p class="pFotter">Get connected with us on social networks:</p>
+                            <ul class="social">
+                                <li><a class="fa fa-facebook" aria-hidden="true" href="https://it-it.facebook.com/reg/"></a></li>
+                                <li><a class="fa fa-twitter" aria-hidden="true" href="https://x.com/?lang=it"></a>
+                                </li>
+                                <li><a class="fa fa-instagram " aria-hidden="true" href="https://www.instagram.com/"></a></li>
+                                <li><a class="fa fa-dribbble" aria-hidden="true" href="https://dribbble.com/"></a>
+                                </li>
+                                <li><a class="fa fa-github" aria-hidden="true" href="https://github.com/"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- Left -->
-
-                    <!-- Right -->
-                    <div>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <!-- Right -->
                 </section>
                 <!-- Section: Social media -->
             </div>
-            <div class="col-12 col-md-6 border-top border-bottom flex-column">
-             
-              
-                  <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
-                <h6>Raccontaci perchè vuoi diventare revisore!</h6>
-                <p>{{ __('ui.clickButtonBelow') }}</p>
-                <a href="{{ route('become.revisor') }}" class="btn btn-success">{{ __('ui.workWithUs') }}
-                </a>
+            <div class="col-12 col-md-6 border-top border-bottom d-flex flex-column justify-content-center">
+                <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
+                <h6 class="text-white">Raccontaci perchè vuoi diventare revisore!</h6>
+                <form action="{{ route('become.revisor') }}" method="POST">
+                    @csrf
+                    <textarea name="body" id="" cols="60" rows="5" placeholder="Raccontaci di te...." class="beige"></textarea>
+                    <p class="text-white">{{ __('ui.clickButtonBelow') }}</p>
+                    <button class=" btnFooter noselect mt-4 rounded-5" type="submit">{{ __('ui.workWithUs') }}
+                    </button>
+                </form>
             </div>
         </div>
     </div>
