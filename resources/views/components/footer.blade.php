@@ -46,7 +46,9 @@
                 <!-- Section: Social media -->
             </div>
             <div class="col-12 col-md-6 border-top border-bottom flex-column">
-                <p class="material-symbols-outlined">support_agent</p>
+             
+              
+                  <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
                 <h6>Raccontaci perchè vuoi diventare revisore!</h6>
                 <p>{{ __('ui.clickButtonBelow') }}</p>
                 <a href="{{ route('become.revisor') }}" class="btn btn-success">{{ __('ui.workWithUs') }}
