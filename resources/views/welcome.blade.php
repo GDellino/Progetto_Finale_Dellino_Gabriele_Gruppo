@@ -52,7 +52,7 @@
             <div class="col-12 col-lg-4">
                 <div class="d-flex flex-column align-items-center border-end">
                     <i class="bi bi-cart-check-fill fs-3"></i>
-                    <h3>Prodotti venduti</h3>
+                    <h3>{{__('ui.Sold Products')}}</h3>
                     <span class="fs-2" id="firstNumber"></span>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             <div class="col-12 col-lg-4">
                 <div class="d-flex flex-column align-items-center border-end">
                     <i class="bi bi-person-fill-check fs-3"></i>
-                    <h3>Clienti soddisfatti</h3>
+                    <h3>{{__('ui.Satisfied Customers')}}</h3>
                     <span class="fs-2" id="secondNumber"></span>
                 </div>
             </div>
@@ -68,7 +68,7 @@
             <div class="col-12 col-lg-4">
                 <div class="d-flex flex-column align-items-center ">
                     <i class="bi bi-stars fs-3"></i>
-                    <h3>Recensioni</h3>
+                    <h3>{{__('ui.Reviews')}}</h3>
                     <span class="fs-2" id="thirdNumber"></span>
                 </div>
             </div>

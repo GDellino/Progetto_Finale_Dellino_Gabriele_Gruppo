@@ -6,7 +6,7 @@
     </section>
 
     <section class="py-5">
-        <p class="pTitle ">DIVENTA NOSTRO REVISORE</p>
+        <p class="pTitle ">{{ __('ui.revisor') }}</p>
     </section>
 
     <div class="container-fluid bg-black">
@@ -16,7 +16,7 @@
                 <section class="d-flex flex-column justify-content-center p-4">
                     <div class="center">
                         <div id="social-test">
-                            <p class="pFotter">Get connected with us on social networks:</p>
+                            <p class="pFotter">{{ __('ui.net') }}</p>
                             <ul class="social">
                                 <li><a class="fa fa-facebook" aria-hidden="true" href="https://it-it.facebook.com/reg/"></a></li>
                                 <li><a class="fa fa-twitter" aria-hidden="true" href="https://x.com/?lang=it"></a>
@@ -34,10 +34,10 @@
             </div>
             <div class="col-12 col-md-6 border-top border-bottom d-flex flex-column justify-content-center">
                 <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
-                <h6 class="text-white">Raccontaci perchè vuoi diventare revisore!</h6>
+                <h6 class="text-white">{{__('ui.Tell us why you want to become a reviewer!')}}</h6>
                 <form action="{{ route('become.revisor') }}" method="POST">
                     @csrf
-                    <textarea name="body" id="" cols="60" rows="5" placeholder="Raccontaci di te...." class="beige"></textarea>
+                    <textarea name="body" id="" cols="60" rows="5" placeholder='{{ __('ui.self') }}' class="beige"></textarea>
                     <p class="text-white">{{ __('ui.clickButtonBelow') }}</p>
                     <button class=" btnFooter noselect mt-4 rounded-5" type="submit">{{ __('ui.workWithUs') }}
                     </button>

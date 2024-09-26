@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="container-fluid min-vh-100 container-custom mb-5 hNav d-flex flex-column justify-content-center ">
-        <div class="row justify-content-center align-items-center text-center my-3 row-log ">
-            <div class="col-12 my-4">
+    <div class="container-fluid min-vh-100 container-custom mb-5 hNav ">
+        <div class="row justify-content-center align-items-center text-center py-5  row-log ">
+            <div class="col-12 ">
                 <h1 class="display-3"> {{ $article->title }}</h1>
             </div>
         </div>
@@ -18,8 +18,8 @@
                                 </div>
                                 @endforeach
                                 {{-- btn next non funziona!!! --}}
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                {{-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> --}}
 
                                 {{-- <button class="swiper-button-prev" type="button" data-bs-target="#carouselExample"
                                     data-bs-slide="prev">

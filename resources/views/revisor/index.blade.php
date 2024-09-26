@@ -13,7 +13,7 @@
             <div class="alert alert-success text-center">{{ session('message') }}</div>
         @endif
         @if ($article_to_check)
-            <div class="row justify-content-center m-4 p-4">
+            <div class="row justify-content-evenly m-4 p-4">
                 @if ($article_to_check->images->count())
                     @foreach ($article_to_check->images as $key => $image)
                         <div class="col-6 ">
@@ -92,7 +92,7 @@
 
                 @endif
 
-                <div class="col-12 col-md-4 ps-4 d-flex flex-column justify-content-between">
+                <div class="col-12 col-md-6 ps-4 d-flex flex-column justify-content-between">
                     <div>
                         <h1 class="pb-2">{{ $article_to_check->title }}</h1>
                         <h3 class="pb-2">{{ __('ui.author') }}:{{ $article_to_check->user->name }}</h3>

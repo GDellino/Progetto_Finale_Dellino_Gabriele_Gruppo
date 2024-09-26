@@ -2,7 +2,7 @@
     <div class="container-fluid  container-custom   hNav">
         <div class="row my-3 row-log">
             <div class="col-12 py-5">
-                <h1 class="display-4 text-center">{{__('ui.register')}}</h1>
+                <h1 class="display-4 text-center h1Regiser">{{__('ui.register')}}</h1>
             </div>
         </div>
 

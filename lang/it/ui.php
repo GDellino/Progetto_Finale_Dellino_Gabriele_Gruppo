@@ -38,8 +38,16 @@ return[
     'searchResults' => 'Risultati ricerca',
     'photo preview' => 'Anteprima foto',
     'author'=> 'Autore',
+    'Sold Products'=>'Prodotti venduti',
+    'Satisfied Customers'=>'Clienti soddisfatti',
+    'Reviews'=>'Recensioni',
     // frase
     'phrase'=>'Pubblica il tuo annuncio oggi stesso e raggiungi migliaia di acquirenti interessati. Vendi rapidamente e senza stress con la nostra piattaforma sicura e affidabile! ',
+    'Tell us why you want to become a reviewer!'=>'Raccontaci perchè vuoi diventare revisore!',
+    'revisor'=>'DIVENTA NOSTRO REVISORE',
+    'net'=>'“Connettiti con noi sui social network',
+    'self'=>'Raccontaci di te....',
+
     // categorie
     'libri'=> 'Libri',
     'film'=>'Film',

@@ -37,7 +37,7 @@
         <select wire:model="category" id="category" class="form-control @error('price') is-invalid @enderror">
             <option value="">{{__('ui.selectCategory')}}</option>
             @foreach ($categories as $category)
-                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                <option value="{{ $category->id }}">{{ __("ui.$category->name") }}</option>
             @endforeach
 
         </select>
@@ -61,7 +61,7 @@
 
     @if(!empty($images))
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <p>
                     {{__('ui.photo preview')}}:
                 </p>

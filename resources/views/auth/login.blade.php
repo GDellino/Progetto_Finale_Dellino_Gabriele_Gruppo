@@ -1,12 +1,12 @@
 <x-layout>
     <div class="container-fluid container-custom hNav">
         <div class="row row-log">
-            <div class="col-12 mt-2 ">
+            <div class="col-12 my-5 ">
                 <h1 class="text-center">{{__('ui.login')}}</h1>
             </div>
         </div>
 
-        <div class="row  mb-3 ">
+        <div class="row  mb-5 ">
             <div class="col-12 col-md-6 mb-2 d-flex align-items-center justify-content-center ">
                 <img class="img-fluid rounded-5 " src="/storage/images/login.png" alt="labrador">
             </div>
