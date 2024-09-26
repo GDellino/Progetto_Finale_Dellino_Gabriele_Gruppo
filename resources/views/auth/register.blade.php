@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container-fluid  container-custom   hNav">
-        <div class="row my-3 row-log">
+        <div class="row my-3 row-log p-4">
             <div class="col-12 py-5">
                 <h1 class="display-4 text-center h1Regiser">{{__('ui.register')}}</h1>
             </div>
