@@ -6,17 +6,43 @@ textarea {
 	background-color: rgb(244, 244, 237);
 }
 
-.titleColor{
-	color: rgb(244, 244, 237);
-}
-
 .sectionColor {
 	background-color: rgb(0, 0, 0);
 	border-radius: 0px 0px 50px 50px;
 }
 
 .footerColor {
-	background-color: rgb(244, 244, 237);
+	background-color: rgb(0, 0, 0);
+}
+
+.titleColor{
+	color: rgb(244, 244, 237);
+	font-family: "Abril Fatface", serif;
+	font-size: 75px;
+	font-style: normal;
+}
+
+/* Font*/
+.titolo {
+	font-family: "Abril Fatface", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100px;
+}
+
+.pTitle {
+	font-family: "Gowun Batang", serif;
+	color: rgb(244, 244, 237);
+	font-weight: 400;
+	font-size: 130px;
+	font-style: normal;
+	text-align: center;
+	margin-top: 100px;
+  }
+
+h4{
+	font-family: "Junge", cursive;
+	color: #9e9d9d;
 }
 
 /* Body */
@@ -27,8 +53,13 @@ textarea {
 .logo{
 	height: 50px;
 	width: 130px;
-		
 }
+
+/* Footer */
+.rowFooter{
+	height: 450px;
+}
+
 /* Navbar */
 .navbarCustom {
 	width: 100%;
@@ -39,9 +70,7 @@ textarea {
 	left: 0;
 	z-index: 1000;
 	font-family: "Junge", cursive;
-		
-	  
-	  
+	font-weight: 900; 
 }
 
 .navBg{
@@ -49,6 +78,7 @@ textarea {
 	backdrop-filter: blur(5px);
 	border-radius: 0px 0px 50px 50px;
 }
+
 .navBgLogin{
 	background-color: rgba(255, 255, 255, 0.508);
 	backdrop-filter: blur(5px);
@@ -60,6 +90,7 @@ textarea {
 	top: 0;
 	left: 0;
 	z-index: 1000;
+	font-weight: 900; 
 }
 
 .nav-lg {
@@ -70,6 +101,11 @@ textarea {
 		display: flex;
 		justify-content: start;
 	}
+}
+
+/* Altezza navabar */
+.hNav{
+	margin-top: 140px;
 }
 
 /* header */
@@ -86,6 +122,12 @@ header {
 	background-color: rgb(244, 244, 237);
 	border-radius: 50px 50px 50px 50px;
 }
+
+.sectionCustom{
+	background-color: rgb(244, 244, 237);
+	border-radius: 0px 0px 50px 50px;
+}
+
 /* GrandezzaImg */
 .imgCustom{
 	height: 750px;
@@ -94,36 +136,12 @@ header {
 	
 }
 
-/* .bg-img {
 
-	background-image: url(../../public/storage/images/labrador.jpg);
-	background-repeat: no-repeat;
-	
-
-
-	@media screen and (max-width: 1024px) {
-		background-repeat: repeat;
-		background-image: url(../../public/storage/images/Progetto_senza_titolo.png);
-
-	}
-} */
-
-/* Altezza navabar */
-.hNav{
-	margin-top: 140px;
-}
 
 .patua-one-regular {
 	font-family: "Patua One", serif;
 	font-weight: 400;
 	font-style: normal;
-}
-
-.titolo {
-	font-family: "Abril Fatface", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 100px;
 }
 
 .alt {
@@ -223,14 +241,14 @@ header {
 	}
 	
 	h5 {
+		font-family: "Abril Fatface", serif;
 		position: absolute;
 		top: 50px;
-		left: 20px;
 		margin: 0;
 		padding: 0;
 		color: white;
 		font-size: 40px;
-		font-weight: 100;
+		font-weight: 0;
 		line-height: 1;
 		opacity: 1;
 		transform: scale(1);
@@ -265,6 +283,7 @@ header {
 		}
 
 		p {
+			font-family: "Junge", cursive;
 			font-size: 14px;
 			line-height: 1.75;
 		}
@@ -284,13 +303,7 @@ header {
 		}
 	}
 }
-h4{
 
-
-	font-family: "Junge", cursive;
-	color: #9e9d9d;
-  
-}
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0.255em;
@@ -316,13 +329,13 @@ h4{
 }
 
 .page-link {
-	color: #728E17 !important;
+	color: #000000 !important;
 }
 
 .page-link.active,
 .active>.page-link {
-	background-color: #728E17 !important;
-	border-color: rgb(245, 245, 144) !important;
+	background-color: #000000 !important;
+	border-color: rgb(255, 255, 255) !important;
 	color: white !important;
 }
 

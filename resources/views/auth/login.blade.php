@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid container-custom  hNav">
+    <div class="container-fluid container-custom hNav">
         <div class="row row-log">
             <div class="col-12 mt-2 ">
                 <h1 class="text-center">{{__('ui.login')}}</h1>

@@ -26,10 +26,10 @@
         </div>
     </header>
 
-    <section class="beige mb-3 ">
+    <section class="beige">
         <div class="sectionColor">
             <div class="container-fluid text-center py-5 ">
-                <h1 class="py-5 text-center titleColor">{{__('ui.latestAds')}}</h1>
+                <h2 class="py-5 text-center titleColor">{{__('ui.latestAds')}}</h2>
                 <div class='row justify-content-evenly align-items-center gap-5 '>
                     @forelse ($articles as $article)
                         <div class=" col-12 col-md-3 d-flex justify-content-center align-items-center  ">
@@ -45,5 +45,32 @@
         </div>
     </section>
 
+    <section class="container-fluid sectionCustom v-100 p-5">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="d-flex flex-column align-items-center border-end">
+                    <i class="bi bi-cart-check-fill fs-3"></i>
+                    <h3>Prodotti venduti</h3>
+                    <span class="fs-2" id="firstNumber"></span>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="d-flex flex-column align-items-center border-end">
+                    <i class="bi bi-person-fill-check fs-3"></i>
+                    <h3>Clienti soddisfatti</h3>
+                    <span class="fs-2" id="secondNumber"></span>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="d-flex flex-column align-items-center ">
+                    <i class="bi bi-stars fs-3"></i>
+                    <h3>Recensioni</h3>
+                    <span class="fs-2" id="thirdNumber"></span>
+                </div>       
+            </div>
+        </div>
+    </section>
 
 </x-layout>

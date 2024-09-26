@@ -19,12 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="bodyCustom">
     <x-navbar />
 
+    <main class="position-relative z-1">
         {{ $slot }}
+    </main>
+        
 
     <x-footer />
 

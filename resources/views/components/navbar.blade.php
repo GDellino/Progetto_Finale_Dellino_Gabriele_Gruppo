@@ -50,7 +50,7 @@
                         href="{{ route('article.index') }}">{{ __('ui.allArticles') }}</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                    <a class="nav-link dropdown-toggle text-black " href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">{{ __('ui.categories') }}</a>
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)

@@ -1,106 +1,72 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start text-muted w-100 bottom-0 footerColor">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+<footer class="text-center text-lg-start text-muted w-100 bottom-0 footerColor vh-100"
+    style="position:sticky; bottom:0; left:0;">
+    <section class="position-relative">
+
+    </section>
+
+    <section class="py-5">
+        <p class="pTitle ">DIVENTA NOSTRO REVISORE</p>
+    </section>
+
+    <div class="container-fluid bg-danger">
+        <div class="row rowFooter">
+            <div class="col-12 col-md-6 border-top border-bottom border-end">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Get connected with us on social networks:</span>
+                    </div>
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <div class="col-12 col-md-6 border-top border-bottom flex-column">
+                <p class="material-symbols-outlined">support_agent</p>
+                <h6>Raccontaci perchè vuoi diventare revisore!</h6>
+                <p>{{ __('ui.clickButtonBelow') }}</p>
+                <a href="{{ route('become.revisor') }}" class="btn btn-success">{{ __('ui.workWithUs') }}
+                </a>
+            </div>
         </div>
-        <!-- Left -->
+    </div>
 
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
 
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>{{__('ui.wantToBeReviewer')}}
-              </h6>
-              <p>{{__('ui.clickButtonBelow')}}</p>
-              <a href="{{route('become.revisor')}}" class="btn btn-success">{{__('ui.workWithUs')}} </a>
-            </div>
-            <!-- Grid column -->
+    <!-- Section: Links  -->
+    <section class="">
 
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Products
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
-            </div>
-            <!-- Grid column -->
+    </section>
+    <!-- Section: Links  -->
 
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Useful links
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Help</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <!-- Copyright -->
+    <div class="text-center p-4 bottom-0" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="">Presto.it</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
