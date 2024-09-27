@@ -4,7 +4,7 @@ import './main';
 import Swiper from 'swiper/bundle';
 var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: 6,
       freeMode: true,
       watchSlidesProgress: true,
 });

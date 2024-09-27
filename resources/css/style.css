@@ -683,3 +683,6 @@ header {
     .swiper-wrapper{
 	background-color:  rgb(244, 244, 237);
     }
+.heightCustom{
+	min-height: 70vh;
+}
