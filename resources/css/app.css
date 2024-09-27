@@ -5,3 +5,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import 'bootstrap-icons';
 @import 'swiper/css/bundle';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';

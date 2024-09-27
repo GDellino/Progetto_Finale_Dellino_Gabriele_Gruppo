@@ -79,8 +79,8 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ __('ui.hello') }},{{ Auth::user()->name }}
                         </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="nav-item btn text-dark " href="#"
+                        <ul class="dropdown-menu logout">
+                            <li><a class="nav-item btn text-dark  " href="#"
                                     onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                             </li>
                             <form action="{{ route('logout') }}" method="POST" id="form-logout">@csrf</form>
