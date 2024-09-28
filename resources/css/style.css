@@ -48,6 +48,9 @@ h4{
 	font-family: "Junge", cursive;
 	color: #9e9d9d;
 }
+h3{
+	font-family: "Junge", cursive;
+}
 
 /* Body */
 .bodyCustom {
@@ -642,7 +645,7 @@ header {
 
     .swiper {
       width: 100%;
-      height: 300px;
+      height: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -683,7 +686,14 @@ header {
     .swiper-wrapper{
 	background-color:  rgb(244, 244, 237);
     }
+
+
 .heightCustom{
-	min-height: 70vh;
+	min-height: 62vh;
+	width: 25vw;
 }
 
+.colSwiper {
+	width: 25vw ;
+	margin-right: 100px;
+}
