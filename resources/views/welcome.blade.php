@@ -39,7 +39,7 @@
                         </div>
                     @empty
                         <div class="col-3">
-                            <h3 class="text-center">Non ci sono ancora articoli</h3>
+                            <h3 class="text-center">{{__('ui.There are no articles yet')}}</h3>
                         </div>
                     @endforelse
                 </div>

@@ -20,20 +20,20 @@ class RevisorController extends Controller
     public function accept(Article $article){
         $article->setAccepted(true);
         return redirect()
-        ->back()->with('message',"Hai accettato l'articolo $article->title");
+        ->back()->with('message', __('ui.articleAccept') . " $article->title");
     }
 
     public function reject(Article $article){
         $article->setAccepted(false);
         return redirect()
-        ->back()->with('message',"Hai rifiutato l'articolo $article->title");
+        ->back()->with('message',__('ui.articleReject') . " $article->title");
     }
 
     public function becomeRevisor(Request $request){
         $user = Auth::user();
         $body = $request->body;
         Mail::to('admin@presto.it')->send(new BecomeRevisor($user, $body));
-        return redirect()->route('homepage')->with('message','Complimenti, hai richiesto di diventare revisore. La tua richiesta e in fase di apporvazione');
+        return redirect()->route('homepage')->with('message', __('ui.revisorOK'));
     }
 
     public function makeRevisor(User $user){

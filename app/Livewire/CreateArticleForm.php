@@ -77,7 +77,7 @@ class CreateArticleForm extends Component
 
 
 
-        session()->flash('success', 'Articolo creato con successo');
+        session()->flash('success', __('ui.articleSuccess'));
         $this->cleanForm();
     }
 

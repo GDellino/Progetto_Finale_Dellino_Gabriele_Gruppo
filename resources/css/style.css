@@ -697,3 +697,8 @@ header {
 	width: 25vw ;
 	margin-right: 100px;
 }
+
+.arrow{
+	color: rgb(244, 244, 237) !important;
+	backdrop-filter: blur(5px);
+}

@@ -47,6 +47,12 @@ return[
     'revisor'=>'CONVIÉRTETE EN NUESTRO REVISOR',
     'net'=>'Conéctate con nosotros en las redes sociales:',
     'self'=>'Cuéntanos sobre ti…',
+    'There are no articles yet'=>'Todavía no hay artículos',
+    'revisorOK'=>'Felicidades, has solicitado convertirte en revisor. Tu solicitud está en proceso de aprobación',
+    'articleAccept'=>'Has aceptado el artículo',
+    'articleReject'=>'Has rechazado el artículo',
+    'articleSuccess'=>'Artículo creado con éxito',
+    'zRevisor'=>'Zona reservada para revisores',
 
     // categorie
     'libri'=> 'Libros',

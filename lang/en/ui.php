@@ -42,12 +42,19 @@ return[
     'Sold Products'=>'Sold Products',
     'Satisfied Customers'=>'Satisfied Customers',
     'Reviews'=>'Reviews',
+
     // frase
     'phrase'=> 'Publish your ad today and reach thousands of interested buyers. Sell quickly and stress-free with our secure and reliable platform',
     'Tell us why you want to become a reviewer!'=>'Tell us why you want to become a reviewer!',
     'revisor'=>'BECOME OUR REVIEWER',
     'net'=>'Get connected with us on social networks:',
     'self'=>'Tell us about yourself…',
+    'There are no articles yet'=>'There are no articles yet',
+    'revisorOK'=>'Congratulations, you have requested to become a reviewer. Your request is under approval',
+    'articleAccept'=>'You have accepted the article',
+    'articleReject'=>'You have rejected the article',
+    'articleSuccess'=>'Article created successfully',
+    'zRevisor'=>'Area reserved for reviewers',
 
     // categorie
     'libri'=> 'Books',

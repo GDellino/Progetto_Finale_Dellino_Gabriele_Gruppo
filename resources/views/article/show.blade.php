@@ -17,8 +17,8 @@
                                         alt="Immagine{{ $key + 1 }} dell'articolo {{ $article->title }}">
                                 </div>
                             @endforeach
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            {{-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> --}}
                             {{-- btn next non funziona!!! --}}
                             {{-- <button class="swiper-button-prev" type="button" data-bs-target="#carouselExample"
                                     data-bs-slide="prev">
@@ -32,6 +32,8 @@
                                 </button> --}}
 
                         </div>
+                        <div class="swiper-button-next arrow"></div>
+                        <div class="swiper-button-prev arrow"></div>
                         <div thumbsSlider="" class="swiper mySwiper mt-4 ">
                             <div class="swiper-wrapper">
                                 @foreach ($article->images as $key => $image)

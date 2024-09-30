@@ -10,6 +10,6 @@
         <p>{{__('ui.createdAt')}}: {{$article->created_at->format('d/m/Y')}}</p>
         <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning btn-card text-black">{{__('ui.details')}}</a>
         <a href="{{ route('byCategory', ['category' => $article->category]) }}"
-            class="btn btn-card btn-light text-black ">{{ $article->category->name }} </a>
+            class="btn btn-card btn-light text-black ">{{__('ui.'.$article->category->name)}}</a>
     </figcaption>
 </div>
