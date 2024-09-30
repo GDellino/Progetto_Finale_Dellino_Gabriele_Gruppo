@@ -16,7 +16,7 @@
             <div class="col-12 text-center min-vh-100">
                 <h3>{{__("ui.noArticles")}} {{__("ui.$category->name")}}</h3>
                 @auth
-                    <a class="btn btn-primary my-5" href="{{route('article.create')}}">{{__("ui.publishArticle")}}</a>
+                    <a class="btn btn-warning text-black my-5" href="{{route('article.create')}}">{{__("ui.publishArticle")}}</a>
                 @endauth
             </div>
             @endforelse

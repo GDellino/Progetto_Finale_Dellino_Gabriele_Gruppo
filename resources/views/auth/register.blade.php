@@ -1,12 +1,12 @@
 <x-layout>
-    <div class="container-fluid  container-custom   hNav">
-        <div class="row my-3 row-log p-4">
-            <div class="col-12 py-5">
-                <h1 class="display-4 text-center h1Regiser">{{__('ui.register')}}</h1>
+    <div class="container-fluid  container-custom hNav min-vh-100">
+        <div class="row my-3 row-log p-3">
+            <div class="col-12 py-4">
+                <h1 class="display-4 text-center h1Regiser ">{{__('ui.register')}}</h1>
             </div>
         </div>
 
-        <div class="row justify-content-center pb-5 my-3">
+        <div class="row justify-content-center pb-5 my-5   ">
             <div class="col-12 col-md-6 ">
                 <img class="img-fluid" src="/storage/images/michele.png" alt="">
             </div>

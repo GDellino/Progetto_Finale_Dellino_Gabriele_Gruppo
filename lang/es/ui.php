@@ -45,7 +45,7 @@ return[
     'phrase'=> 'Publica tu anuncio hoy mismo y llega a miles de compradores interesados. ¡Vende rápidamente y sin estrés con nuestra plataforma segura y confiable',
     'Tell us why you want to become a reviewer!'=>'¡Cuéntanos por qué quieres convertirte en revisor!',
     'revisor'=>'CONVIÉRTETE EN NUESTRO REVISOR',
-    'net'=>'Conéctate con nosotros en las redes sociales:',
+    'net'=>'Conéctate con nosotros en las redes sociales',
     'self'=>'Cuéntanos sobre ti…',
     'There are no articles yet'=>'Todavía no hay artículos',
     'revisorOK'=>'Felicidades, has solicitado convertirte en revisor. Tu solicitud está en proceso de aprobación',
@@ -53,6 +53,8 @@ return[
     'articleReject'=>'Has rechazado el artículo',
     'articleSuccess'=>'Artículo creado con éxito',
     'zRevisor'=>'Zona reservada para revisores',
+    'goRevisor'=>'Ir a la página del revisor',
+    'click'=>'Clic',
 
     // categorie
     'libri'=> 'Libros',

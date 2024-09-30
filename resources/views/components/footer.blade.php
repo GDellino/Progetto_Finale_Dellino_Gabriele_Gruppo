@@ -33,6 +33,13 @@
                 <!-- Section: Social media -->
             </div>
             <div class="col-12 col-md-6 border-top border-bottom d-flex flex-column justify-content-center">
+                @if(Auth::user() && Auth::user()->is_revisor)
+                <h3 class="text-white text-center">{{__('ui.goRevisor')}}</h3>
+                <div class="text-center">
+                    <a href="{{route('revisor.index')}}" class="btn btnFooter noselect mt-4 rounded-5 text-center">{{__('ui.click')}}</a>
+                </div>
+
+                @else
                 <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
                 <h6 class="text-white">{{__('ui.Tell us why you want to become a reviewer!')}}</h6>
                 <form action="{{ route('become.revisor') }}" method="POST">
@@ -42,6 +49,7 @@
                     <button class=" btnFooter noselect mt-4 rounded-5" type="submit">{{ __('ui.workWithUs') }}
                     </button>
                 </form>
+                @endif
             </div>
         </div>
     </div>

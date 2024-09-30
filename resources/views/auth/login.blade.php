@@ -1,13 +1,13 @@
 <x-layout>
     <div class="container-fluid container-custom hNav">
         <div class="row row-log p-3">
-            <div class="col-12 my-5 ">
-                <h1 class="text-center">{{__('ui.login')}}</h1>
+            <div class="col-12 my-4 ">
+                <h1 class="text-center h1Regiser display-4 ">{{__('ui.login')}}</h1>
             </div>
         </div>
 
-        <div class="row  mb-5 ">
-            <div class="col-12 col-md-6 mb-2 d-flex align-items-center justify-content-center ">
+        <div class="row mb-5 ">
+            <div class="col-12 col-md-6 mb-5 d-flex align-items-center justify-content-center ">
                 <img class="img-fluid rounded-5 " src="/storage/images/login.png" alt="labrador">
             </div>
             <div class="col-12 col-md-6 d-flex">

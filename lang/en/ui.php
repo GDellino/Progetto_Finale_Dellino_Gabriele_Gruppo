@@ -47,7 +47,7 @@ return[
     'phrase'=> 'Publish your ad today and reach thousands of interested buyers. Sell quickly and stress-free with our secure and reliable platform',
     'Tell us why you want to become a reviewer!'=>'Tell us why you want to become a reviewer!',
     'revisor'=>'BECOME OUR REVIEWER',
-    'net'=>'Get connected with us on social networks:',
+    'net'=>'Get connected with us on social networks',
     'self'=>'Tell us about yourself…',
     'There are no articles yet'=>'There are no articles yet',
     'revisorOK'=>'Congratulations, you have requested to become a reviewer. Your request is under approval',
@@ -55,6 +55,9 @@ return[
     'articleReject'=>'You have rejected the article',
     'articleSuccess'=>'Article created successfully',
     'zRevisor'=>'Area reserved for reviewers',
+    'goRevisor'=>"Go to the reviewer's page",
+    'click'=>'Click',
+
 
     // categorie
     'libri'=> 'Books',

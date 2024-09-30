@@ -122,7 +122,7 @@
     <div class="row justify-content-center align-items-center text-center custom">
         <div class="col-12">
             <h1 class="fst-italic display-4"> {{ __('ui.noArticlesToReview') }}</h1>
-            <a href="{{ route('homepage') }}" class="mt-5 btn btn-primary">{{ __('ui.backToHomepage') }}</a>
+            <a href="{{ route('homepage') }}" class="mt-5 btn btn-warning text-black">{{ __('ui.backToHomepage') }}</a>
         </div>
     </div>
     @endif
