@@ -53,7 +53,7 @@ return[
     'revisorOK'=>'Congratulations, you have requested to become a reviewer. Your request is under approval',
     'articleAccept'=>'You have accepted the article',
     'articleReject'=>'You have rejected the article',
-    'articleSuccess'=>'Article created successfully',
+    'articleSuccess'=>'Article created successfully, Article under review',
     'zRevisor'=>'Area reserved for reviewers',
     'goRevisor'=>"Go to the reviewer's page",
     'click'=>'Click',

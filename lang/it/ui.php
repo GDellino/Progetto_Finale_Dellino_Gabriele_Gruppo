@@ -51,7 +51,7 @@ return[
     'revisorOK'=>'Complimenti, hai richiesto di diventare revisore. La tua richiesta e in fase di apporvazione',
     'articleAccept'=>"Hai accettato l'articolo",
     'articleReject'=>"hai riufiutato l'articolo",
-    'articleSuccess'=>'Articolo creato con successo',
+    'articleSuccess'=>'Articolo creato con successo, Articolo in fase di revisione',
     'zRevisor'=>'Zona riservata ai revisori',
     'goRevisor'=>'Vai alla pagina del revisore',
     'click'=>'Clicca',
