@@ -32,7 +32,7 @@
                 </section>
                 <!-- Section: Social media -->
             </div>
-            <div class="col-12 col-md-6 border-top border-bottom d-flex flex-column justify-content-center">
+            <div class="col-12 col-md-6 border-top border-bottom d-flex flex-column justify-content-center footerQ">
                 @if(Auth::user() && Auth::user()->is_revisor)
                 <h3 class="text-white text-center">{{__('ui.goRevisor')}}</h3>
                 <div class="text-center">
@@ -42,7 +42,7 @@
                 @else
                 <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
                 <h6 class="text-white">{{__('ui.Tell us why you want to become a reviewer!')}}</h6>
-                <form action="{{ route('become.revisor') }}" method="POST">
+                <form action="{{ route('become.revisor') }}" method="POST" >
                     @csrf
                     <textarea name="body" id="" cols="60" rows="5" placeholder='{{ __('ui.self') }}' class="beige"></textarea>
                     <p class="text-white">{{ __('ui.clickButtonBelow') }}</p>
@@ -62,7 +62,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4 bottom-0" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4 bottom-0 copyF" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="">Presto.it</a>
     </div>

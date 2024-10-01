@@ -6,12 +6,12 @@
             </div>
         </div>
 
-        <div class="row justify-content-center pb-5 my-5   ">
+        <div class="row justify-content-center pb-5 my-3   ">
             <div class="col-12 col-md-6 ">
-                <img class="img-fluid" src="/storage/images/michele.png" alt="">
+                <img class="img-fluid imgReg" src="/storage/images/michele.png" alt="">
             </div>
             <div class="col-12 col-md-6 ">
-                <form action="{{ route('register') }}" method="POST" class="p-5 login-color w-75 rounded-3 form-color" >
+                <form action="{{ route('register') }}" method="POST" class="p-5  rounded-3 form-color regiForm" >
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">{{__('ui.name')}}</label>

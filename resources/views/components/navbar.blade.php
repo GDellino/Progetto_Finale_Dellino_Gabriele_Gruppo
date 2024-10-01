@@ -10,13 +10,13 @@
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ route('homepage') }}"><img class="logo" src="/storage/images/logofinale3.png"
                 alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
 
-        <div class="collapse navbar-collapse nav-lg" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse nav-lg navMedia" id="navbarSupportedContent">
 
 
 
@@ -41,7 +41,7 @@
             </div>
 
             {{-- <div class="d-flex justify-content-center align-items-center"> --}}
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto iconNav">
                 <li class="nav-item">
                     <a class="nav-link active text-black" aria-current="page" href="{{ route('homepage') }}">Home</a>
                 </li>

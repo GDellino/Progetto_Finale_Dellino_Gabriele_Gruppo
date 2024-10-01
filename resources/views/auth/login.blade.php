@@ -10,9 +10,9 @@
             <div class="col-12 col-md-6 mb-5 d-flex align-items-center justify-content-center ">
                 <img class="img-fluid rounded-5 " src="/storage/images/login.png" alt="labrador">
             </div>
-            <div class="col-12 col-md-6 d-flex">
+            <div class="col-12 col-md-6">
                         <form action="{{ route('login') }}" method="POST"
-                            class="  rounded-5 d-flex flex-column   justify-content-center  w-50">
+                            class="  rounded-5 d-flex flex-column  justify-content-center  fotLog ">
                             @csrf
                             <div class="mb-3 ">
                                 <label for="email" class="form-label ">Email</label>

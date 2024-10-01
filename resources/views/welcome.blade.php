@@ -10,8 +10,8 @@
                 <div class="alert  text-center rounded-5 alertCustom ">{{ session('message') }}</div>
             @endif
         </div>
-        <div class="row custom justify-content-evenly">
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-end ">
+        <div class="row custom justify-content-evenly ">
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-end mediaQ ">
                 <div class="h-50 d-flex flex-column justify-content-end align-items-start ms-5 ">
                     <h1 class=" titolo">Presto.it</h1>
                     <h4 class="mt-3">{{__('ui.phrase')}}</h4>
