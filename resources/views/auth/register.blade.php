@@ -8,7 +8,7 @@
 
         <div class="row justify-content-center pb-5 my-3   ">
             <div class="col-12 col-md-6 ">
-                <img class="img-fluid imgReg" src="/storage/images/michele.png" alt="">
+                <img class="img-fluid imgReg" src="images/michele.png" alt="">
             </div>
             <div class="col-12 col-md-6 ">
                 <form action="{{ route('register') }}" method="POST" class="p-5  rounded-3 form-color regiForm" >

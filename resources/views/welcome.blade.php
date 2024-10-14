@@ -22,7 +22,7 @@
 
             </div>
             <div class="col-12 col-md-7 d-flex align-items-center justify-content-center  ">
-                <img class="imgCustom rounded-5 " src='/storage/images/provabg2.jpg 'alt="">
+                <img class="imgCustom rounded-5 " src="images/provabg2.jpg">
             </div>
 
         </div>

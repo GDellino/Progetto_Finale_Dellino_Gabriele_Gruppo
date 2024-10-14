@@ -40,7 +40,7 @@
                 </div>
 
                 @else
-                <img class="imgFooter" src="/storage/images/tech-support.png" alt="">
+                <img class="imgFooter" src="images/tech-support.png" alt="">
                 <h6 class="text-white">{{__('ui.Tell us why you want to become a reviewer!')}}</h6>
                 <form action="{{ route('become.revisor') }}" method="POST" >
                     @csrf
